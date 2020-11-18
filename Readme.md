@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Григорий Грабаренко](https://up.htmlacademy.ru/adaptive/21/user/1585633).
-* Наставник: `Неизвестно`.
+* Наставник: [Натали Белоева](https://up.htmlacademy.ru/htmlcss/29/user/1123699).
 
 ---
 
