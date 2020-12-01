@@ -7,7 +7,7 @@
 </head>
 <body class="page__body">
   <header class="page-header">
-    <a class="page-header__logo">
+    <a class="page-header__logo" href="index.html">
       <img src="img/logotype-mobile.svg" width="102" height="84" alt="Седона"></a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
@@ -29,13 +29,11 @@
   </header>
   <main class="page-main">
     <section class="photo">
-      <div class="photo__wrapper">
         <div class="photo__image"><img src="https://via.placeholder.com/150x150" alt="седона"></div>
         <h2 class="photo__title">Оставте свой отзыв</h2>
         <p class="photo__text">Помогите нашим отелям стать лучше!
           оставте отзыв оних, а также о посещенных вами
           достопримечательностях</p>
-      </div>
     </section>
     <section class="contacts">
       <h2 class="visually-hidden">Контактная информация</h2>
@@ -50,11 +48,12 @@
               </li>
               <li>
                 <label for="your-surname">Фамилия:</label>
-                <input class="contacts__input" type="text" name="name" id="your-surname" placeholder="Иванов">
+                <input class="contacts__input" type="text" name="surename" id="your-surname" placeholder="Иванов">
               </li>
               <li>
                 <label for="your-patronymic">Отчество:</label>
-                <input class="contacts__input" type="text" name="name" id="your-patronymic" placeholder="Александрович">
+                <input class="contacts__input" type="text" name="patronymic" id="your-patronymic"
+                  placeholder="Александрович">
               </li>
             </ul>
           </fieldset>
@@ -63,42 +62,53 @@
             <ul>
               <li>
                 <label for="your-number">контактный телефон:</label>
-                <input class="contacts__input" type="text" name="number" id="your-number" placeholder="Введите телефон">
+                <input class="contacts__input" type="number" name="number" id="your-number"
+                  placeholder="Введите телефон">
               </li>
               <li>
                 <label for="your-email">электронная почта:</label>
-                <input class="contacts__input" type="text" name="email" id="your-email" placeholder="Введите e-mail">
+                <input class="contacts__input" type="email" name="email" id="your-email" placeholder="Введите e-mail">
               </li>
             </ul>
           </fieldset>
           <fieldset class="contacts__group">
             <legend class="contacts__title">Ваше общее впечатление:</legend>
             <ul>
-              <li class="contacts-group__option filter-radio">
+              <li class="contacts__item filter-radio">
                 <label for="positively">Скорее положительное</label>
-                <input class="contacts__input visually-hidden" type="radio" name="option-positively" id="positively"
+                <input class="contacts__input visually-hidden" type="radio" name="option-radio" id="positively"
                   checked>
               </li>
-              <li>
+              <li class="contacts__item filter-radio">
                 <label for="negatively">Скороее отрицательное</label>
-                <input class="contacts__input visually-hidden" type="radio" name="option-negatively" id="negatively">
+                <input class="contacts__input visually-hidden" type="radio" name="option-radio" id="negatively">
               </li>
-              <li>
+              <li class="contacts__item filter-radio">
                 <label for="no-comments">Затрудняюсь ответить</label>
-                <input class="contacts__input visually-hidden" type="radio" name="option-no-comments" id="no-comments">
+                <input class="contacts__input visually-hidden" type="radio" name="option-radio" id="no-comments">
               </li>
             </ul>
           </fieldset>
           <fieldset class="contacts__group">
             <legend class="contacts__title">Посещенные достопримечательности:</legend>
-            <label for="devils-bridge">Мост дъявола</label>
-            <input class="contacts__input" type="checkbox" name="option-devils-bridge" id="devils-bridge" checked>
-            <label for="mountain-bell">Гора-Колокол</label>
-            <input class="contacts__input" type="checkbox" name="option-mountain-bell" id="mountain-bell" checked>
-            <label for="slide-park">Слайд-парк</label>
-            <input class="contacts__input" type="checkbox" name="option-slide-park" id="slide-park" checked>
-            <label for="red-rocks">Красные скалы</label>
-            <input class="contacts__input" type="checkbox" name="option-red-rocks" id="red-rocks">
+            <ul>
+              <li class="contacts__item filter-checkbox">
+                <label for="devils-bridge">Мост дъявола</label>
+                <input class="contacts__input" type="checkbox" name="option-checkbox" id="devils-bridge" checked>
+              </li>
+              <li class="contacts__item filter-checkbox">
+                <label for="mountain-bell">Гора-Колокол</label>
+                <input class="contacts__input" type="checkbox" name="option-checkbox" id="mountain-bell" checked>
+              </li>
+              <li class="contacts__item filter-checkbox">
+                <label for="slide-park">Слайд-парк</label>
+                <input class="contacts__input" type="checkbox" name="option-checkbox" id="slide-park" checked>
+              </li>
+              <li class="contacts__item filter-checkbox">
+                <label for="red-rocks">Красные скалы</label>
+                <input class="contacts__input" type="checkbox" name="option-checkbox" id="red-rocks">
+              </li>
+            </ul>
           </fieldset>
           <fieldset class="contacts__group">
             <legend class="contacts__title">Опишите свои эмоции:</legend>
