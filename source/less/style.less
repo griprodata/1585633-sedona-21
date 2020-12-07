@@ -1,1 +1,35 @@
-// Начните писать стили здесь
+@import "header.less";
+@import "intro.less";
+@import "content.less";
+@import "photo.less";
+@import "video.less";
+@import "search.less";
+@import "contacts.less";
+@import "footer.less";
+
+
+.page__body {
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-weight: 400;
+  color: @black;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+}
+
+@white: #ffffff;
+@blue: #81b3d2;
+@black: #000000;
+@space: #333333;
+
+

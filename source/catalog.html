@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Седона</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page__body">
   <header class="page-header">
@@ -11,8 +12,8 @@
       <img src="img/logotype-mobile.svg" width="102" height="84" alt="Седона">
     </a>
     <nav class="main-nav">
-      <button class=" main-nav__toggle" type="button">
-        <span class="visially-hidden">Открыть меню</span>
+      <button class=" main-nav__toggle" aria-label="бургер" type="button">
+        <span class="visually-hidden">Открыть меню</span>
       </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
@@ -30,35 +31,39 @@
   </header>
   <main class="page-main">
     <section class="photo">
-        <div class="photo__image"><img src="https://via.placeholder.com/150x150" alt="седона"></div>
+        <div class="photo__image"><img src="img/back-desktop.jpg" alt="седона"></div>
         <h1 class="photo__title">Фото и Видео</h1>
         <p class="photo__text">Не можете решиться на путешествие из-закурса?<br>
           фотографии помогут вам забытьо политике и экономике.</p>
         <ul class="photo__list">
-          <li class="photo__item"><img src="img/photo-1-mobile.jpg" width="280" height="280" alt="Неродные просторы">
+          <li class="photo__item">
+            <img src="img/photo-1-mobile.jpg" width="280" height="280" alt="Неродные просторы">
             <h3 class="photo__intro">Неродные просторы</h3>
             <p class="photo__article">Автор фото: Борис</p>
-            <button type="button"></button>
-            <p class="">1350</p>
+            <button class="photo__button" type="button"  aria-label="нравится"></button>
+            <p class="photo__number">1350</p>
           </li>
-          <li class="photo__item"><img src="img/photo-2-mobile.jpg" width="280" height="280"
+          <li class="photo__item">
+            <img src="img/photo-2-mobile.jpg" width="280" height="280"
               alt="Метсная растительность">
             <h3 class="photo__intro">Метсная растительность</h3>
             <p class="photo__article">Автор фото: Сергей</p>
-            <button type="button"></button>
-            <p class="">143</p>
+            <button class="photo__button" type="нравится"  aria-label="like"></button>
+            <p class="photo__number">143</p>
           </li>
-          <li class="photo__item"><img src="img/photo-3-mobile.jpg" width="280" height="280" alt="Дорога и север">
+          <li class="photo__item">
+            <img src="img/photo-3-mobile.jpg" width="280" height="280" alt="Дорога и север">
             <h3 class="photo__intro">Дорога и север</h3>
             <p class="photo__article">Автор фото: Петр</p>
-            <button type="button"></button>
-            <p class="">96</p>
+            <button class="photo__button" type="button" aria-label="нравится"></button>
+            <p class="photo__number">96</p>
           </li>
-          <li class="photo__item"><img src="img/photo-4-desktop1.jpg" width="280" height="280" alt="Мост дьявола">
+          <li class="photo__item">
+            <img src="img/photo-4-desktop1.jpg" width="280" height="280" alt="Мост дьявола">
             <h3 class="photo__intro">Мост дьявола</h3>
             <p class="photo__article">Автор фото: Антон</p>
-            <button type="button"></button>
-            <p class="">254</p>
+            <button class="photo__button" type="button" aria-label="нравится"></button>
+            <p class="photo__number">254</p>
           </li>
         </ul>
     </section>
@@ -74,25 +79,24 @@
           <div class="video__toggle toggle-min"></div>
         </div>
         <div class="video__navigation">
-          <button type="button"></button>
-          <button type="button"></button>
-          <button type="button"></button>
+          <button class="video__button replay" type="button" aria-label="нравится"></button>
+          <button class="video__button subtitles" type="button" aria-label="нравится"></button>
+          <button class="video__button fullscreen" type="button" aria-label="нравится"></button>
         </div>
     </section>
     </main>
     <footer class="footer">
       <div class="footer__wrapper">
-        <img src="img/map-mobile.jpg" width="320" height="350" alt="карта">
         <p class="footer__title">#visitsedona</p>
         <ul class="footer__list">
-          <li class="footeritem">
-            <a class="footer__link" href="#"></a>
+          <li class="footer__item">
+            <a class="footer__link tw" href="#"aria-label="twitter"></a>
           </li>
           <li class="footer__item">
-            <a class="footer__link" href="#"></a>
+            <a class="footer__link fb" href="#"aria-label="facebook"></a>
           </li>
           <li class="footer__item">
-            <a class="footer__link" href="#"></a>
+            <a class="footer__link utb" href="#"aria-label="youtube"></a>
           </li>
         </ul>
         <div class="footer-copyright">

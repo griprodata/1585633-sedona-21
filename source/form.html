@@ -4,14 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Седона</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page__body">
   <header class="page-header">
     <a class="page-header__logo" href="index.html">
       <img src="img/logotype-mobile.svg" width="102" height="84" alt="Седона"></a>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
-        <span class="visially-hidden">Открыть меню</span>
+      <button class="main-nav__toggle" aria-label="бургер" type="button">
+        <span class="visually-hidden">Открыть меню</span>
       </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
@@ -29,7 +30,7 @@
   </header>
   <main class="page-main">
     <section class="photo">
-        <div class="photo__image"><img src="https://via.placeholder.com/150x150" alt="седона"></div>
+        <div class="photo__image"><img src="img/back-desktop.jpg" alt="седона"></div>
         <h2 class="photo__title">Оставте свой отзыв</h2>
         <p class="photo__text">Помогите нашим отелям стать лучше!
           оставте отзыв оних, а также о посещенных вами
@@ -47,7 +48,7 @@
                 <input class="contacts__input" type="text" name="name" id="your-name" placeholder="Петр">
               </li>
               <li>
-                <label for="your-surname">Фамилия:</label>
+                <label for="your-surname">Фамилия*:</label>
                 <input class="contacts__input" type="text" name="surename" id="your-surname" placeholder="Иванов">
               </li>
               <li>
@@ -75,17 +76,17 @@
             <legend class="contacts__title">Ваше общее впечатление:</legend>
             <ul>
               <li class="contacts__item filter-radio">
-                <label for="positively">Скорее положительное</label>
-                <input class="contacts__input visually-hidden" type="radio" name="option-radio" id="positively"
+                <input class="contacts__input visually-hidden filter-input-radio" type="radio" name="option-radio" id="positively"
                   checked>
+                  <label for="positively">Скорее положительное</label>
               </li>
               <li class="contacts__item filter-radio">
+                <input class="contacts__input visually-hidden filter-input-radio" type="radio" name="option-radio" id="negatively">
                 <label for="negatively">Скороее отрицательное</label>
-                <input class="contacts__input visually-hidden" type="radio" name="option-radio" id="negatively">
               </li>
               <li class="contacts__item filter-radio">
+                <input class="contacts__input visually-hidden filter-input-radio" type="radio" name="option-radio" id="no-comments">
                 <label for="no-comments">Затрудняюсь ответить</label>
-                <input class="contacts__input visually-hidden" type="radio" name="option-radio" id="no-comments">
               </li>
             </ul>
           </fieldset>
@@ -93,20 +94,20 @@
             <legend class="contacts__title">Посещенные достопримечательности:</legend>
             <ul>
               <li class="contacts__item filter-checkbox">
-                <label for="devils-bridge">Мост дъявола</label>
-                <input class="contacts__input" type="checkbox" name="option-checkbox" id="devils-bridge" checked>
+                <input class="contacts__input visually-hidden filter-input-checkbox" type="checkbox" name="option-checkbox" id="devils-bridge" checked>
+                <label for="devils-bridge">Мост Дъявола</label>
               </li>
               <li class="contacts__item filter-checkbox">
+                <input class="contacts__input visually-hidden filter-input-checkbox" type="checkbox" name="option-checkbox" id="mountain-bell" checked>
                 <label for="mountain-bell">Гора-Колокол</label>
-                <input class="contacts__input" type="checkbox" name="option-checkbox" id="mountain-bell" checked>
               </li>
               <li class="contacts__item filter-checkbox">
+                <input class="contacts__input visually-hidden filter-input-checkbox" type="checkbox" name="option-checkbox" id="slide-park" checked>
                 <label for="slide-park">Слайд-парк</label>
-                <input class="contacts__input" type="checkbox" name="option-checkbox" id="slide-park" checked>
               </li>
               <li class="contacts__item filter-checkbox">
+                <input class="contacts__input visually-hidden filter-input-checkbox" type="checkbox" name="option-checkbox" id="red-rocks">
                 <label for="red-rocks">Красные скалы</label>
-                <input class="contacts__input" type="checkbox" name="option-checkbox" id="red-rocks">
               </li>
             </ul>
           </fieldset>
@@ -115,7 +116,7 @@
             <label for="your-message"></label>
             <textarea name="text" id="your-message" cols="30" rows="10"
               placeholder="Опишите подробно все свои восторги"></textarea>
-            <button class="contacts__button" type="submit">Отпавить отзыв</button>
+            <button class="contacts__button" type="submit">Отправить отзыв</button>
           </fieldset>
         </form>
       </div>
@@ -123,17 +124,16 @@
   </main>
   <footer class="footer">
     <div class="footer__wrapper">
-      <img src="img/map-mobile.jpg" width="320" height="350" alt="карта">
       <p class="footer__title">#visitsedona</p>
       <ul class="footer__list">
-        <li class="footeritem">
-          <a class="footer__link" href="#"></a>
+        <li class="footer__item">
+          <a class="footer__link tw" href="#"aria-label="twitter"></a>
         </li>
         <li class="footer__item">
-          <a class="footer__link" href="#"></a>
+          <a class="footer__link fb" href="#"aria-label="facebook"></a>
         </li>
         <li class="footer__item">
-          <a class="footer__link" href="#"></a>
+          <a class="footer__link utb" href="#"aria-label="youtube"></a>
         </li>
       </ul>
       <div class="footer-copyright">
