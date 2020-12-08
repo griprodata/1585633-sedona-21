@@ -1,3 +1,16 @@
+.page {
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  font-style: normal;
+  text-transform: uppercase;
+}
+.page__body {
+  background-color: #ffffff;
+  color: #000000;
+  margin: 0;
+}
 .main-nav__list {
   list-style: none;
 }
@@ -8,7 +21,7 @@
   background: #669ec0;
 }
 .main-nav__item:active {
-  background: #5496BD;
+  background: #5496bd;
 }
 .main-nav__toggle {
   height: 22px;
@@ -32,35 +45,28 @@
   font-size: 18px;
   font-weight: bold;
   line-height: 40px;
-  text-transform: uppercase;
   text-decoration: none;
 }
 .intro__title {
-  font-size: 21px;
-  line-height: 26px;
+  font-size: 18px;
   font-weight: 700;
-  color: #000000;
-  text-transform: uppercase;
 }
 .intro__article {
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 400;
   color: #333333;
-  text-transform: uppercase;
 }
 .content__list {
   list-style: none;
 }
 .content__intro {
-  font-size: 21px;
-  line-height: 15px;
-  text-transform: uppercase;
+  font-size: 18px;
+}
+.content__number {
+  line-height: 21px;
+  color: #ffffff;
 }
 .content__article {
-  font-size: 18px;
-  line-height: 26px;
-  text-transform: uppercase;
+  color: #ffffff;
+  line-height: 21px;
 }
 .item-blue {
   color: #ffffff;
@@ -70,8 +76,6 @@
   color: #000000;
 }
 .content-advantages__item {
-  list-style: none;
-  background-color: #ffffff;
   position: relative;
   padding-left: 50px;
   margin: 0;
@@ -103,16 +107,15 @@
   width: 40px;
   background-image: url("../img/icon-burger.svg");
 }
+.content-advantages {
+  background-color: #ffffff;
+}
 .content-advantages__title {
-  font-size: 21px;
-  line-height: 26px;
+  font-size: 18px;
   font-weight: 700;
-  color: #000000;
 }
 .content-advantages__text {
-  font-size: 18px;
-  line-height: 15px;
-  color: #000000;
+  line-height: 21px;
 }
 .photo__list {
   list-style: none;
@@ -122,34 +125,22 @@
 }
 .photo__title {
   font-size: 21px;
-  line-height: 26px;
   font-weight: 700;
-  color: #000000;
-  text-transform: uppercase;
 }
 .photo__text {
   font-size: 18px;
-  line-height: 26px;
-  font-weight: 400;
   color: #333333;
-  text-transform: uppercase;
 }
 .photo__intro {
-  font-size: 14px;
   font-weight: 700;
   line-height: 24px;
-  text-transform: uppercase;
-  color: #000000;
 }
 .photo-article {
-  font-size: 14px;
-  font-weight: 400;
   line-height: 24px;
   color: #333333;
 }
 .photo__number {
   font-weight: 700;
-  font-size: 14px;
   line-height: 24px;
 }
 .photo__button {
@@ -166,14 +157,9 @@
 .video__title {
   font-size: 21px;
   font-weight: 700;
-  line-height: 26px;
-  text-transform: uppercase;
 }
 .video__text {
-  font-size: 14px;
-  font-weight: 400;
   line-height: 24px;
-  text-transform: uppercase;
 }
 .replay {
   height: 20px;
@@ -205,20 +191,16 @@
 .search__title {
   font-size: 21px;
   font-weight: 700;
-  line-height: 26px;
-  text-transform: uppercase;
 }
 .search__article {
-  font-size: 14px;
-  font-weight: 400;
   line-height: 24px;
-  text-transform: uppercase;
+  color: #333333;
 }
 .search__button {
+  font-size: 21px;
   color: #ffffff;
   background: #81b3d2;
   border: none;
-  text-transform: uppercase;
 }
 .search__button:hover {
   background-color: #669ec0;
@@ -231,16 +213,13 @@
 }
 .contacts__title {
   font-size: 18px;
-  line-height: 26px;
   font-weight: 700;
-  text-transform: uppercase;
 }
 .contacts__input {
   background-color: #f2f2f2;
   border: none;
   font-size: 18px;
   font-weight: 700;
-  line-height: 26px;
 }
 .contacts__input:hover {
   background-color: #e5e5e5;
@@ -253,12 +232,6 @@
 }
 .contacts__form ul {
   list-style: none;
-}
-.contacts__form label {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 26px;
-  text-transform: uppercase;
 }
 .contacts__item label {
   position: relative;
@@ -290,25 +263,15 @@
 .contacts__form textarea {
   font-size: 18px;
   font-weight: 700;
-  line-height: 26px;
 }
 .contacts__button {
   color: #ffffff;
   background-color: #81b3d2;
   border: none;
-  text-transform: uppercase;
 }
 .footer__title {
   font-size: 21px;
-  line-height: 26px;
   font-weight: 700;
-  text-transform: uppercase;
-}
-.footer-copyright__text {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 26px;
-  text-transform: uppercase;
 }
 .footer__list {
   list-style: none;
@@ -380,11 +343,6 @@
 .utb:active::before {
   opacity: 0.3;
 }
-.page__body {
-  font-family: "PT Sans Narrow", "Arial", sans-serif;
-  font-weight: 400;
-  color: #000000;
-}
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -397,6 +355,28 @@
   white-space: nowrap;
   -webkit-clip-path: inset(100%);
           clip-path: inset(100%);
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/pt-sans-v12-latin_cyrillic-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/pt-sans-v12-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/pt-sans-v12-latin_cyrillic-regular.woff") format("woff");
+}
+/* pt-sans-700 - latin_cyrillic */
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/pt-sans-v12-latin_cyrillic-700.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/pt-sans-v12-latin_cyrillic-700.woff2") format("woff2"), url("../fonts/pt-sans-v12-latin_cyrillic-700.woff") format("woff");
 }
 
 /*# sourceMappingURL=style.css.map */
