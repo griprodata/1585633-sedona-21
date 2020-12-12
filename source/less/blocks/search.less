@@ -1,5 +1,6 @@
 .search__title {
   font-size: 21px;
+  line-height: 26px;
   font-weight: 700;
 }
 
@@ -9,20 +10,23 @@
 }
 
 .search__button {
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 21px;
+  line-height: 26px;
   color: @white;
   background: @blue;
   border: none;
 }
 
 .search__button:hover {
-  background-color: #669ec0;
+  background-color: @extrablue;
 }
 
 .search__button:active {
-  background-color: #5496bd;
+  background-color: @basicblue;
+  color: rgba(@white, 0.3);
 }
 
 .search__button:disabled {
-  background-color: #e5e5e5;
+  background-color: @basicwhite;
 }

@@ -4,34 +4,33 @@
 
 .content__intro {
   font-size: 18px;
+  line-height: 26px;
 }
 
 .content__number {
   line-height: 21px;
-  color: @white;
 }
 
 .content__article {
-  color: @white;
   line-height: 21px;
 }
 
-.item-blue {
+.content__item-blue {
   color: @white;
   background-color: @blue;
 }
 
-.item-black {
+.content__item-black {
   color: @black;
 }
 
-.content-advantages__item {
+.content__advantages-item {
   position: relative;
   padding-left: 50px;
   margin: 0;
 }
 
-.home::before {
+.content__advantages-item-home::before {
   content: "";
   position: absolute;
   top: 0;
@@ -41,7 +40,7 @@
   background-image: url("../img/icon-house.svg");
 }
 
-.gift::before {
+.content__advantages-item-gift::before {
   content: "";
   position: absolute;
   top: 0;
@@ -51,7 +50,7 @@
   background-image: url("../img/icon-gift.svg");
 }
 
-.burger::before {
+.content__advantages-item-burger::before {
   content: "";
   position: absolute;
   top: 0;
@@ -61,15 +60,18 @@
   background-image: url("../img/icon-burger.svg");
 }
 
-.content-advantages {
+.content__advantages {
   background-color: @white;
 }
 
-.content-advantages__title {
+.content__advantages-title {
   font-size: 18px;
+  line-height: 26px;
+  color: @black;
   font-weight: 700;
 }
 
-.content-advantages__text {
+.content__advantages-text {
   line-height: 21px;
+  color: @space;
 }
