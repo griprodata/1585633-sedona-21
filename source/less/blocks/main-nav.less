@@ -1,0 +1,44 @@
+.main-nav__list {
+  list-style: none;
+}
+
+.main-nav__item {
+  background: @blue;
+}
+
+.main-nav__link {
+  display: block;
+  color: @white;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 40px;
+  text-decoration: none;
+}
+
+.main-nav__link:hover {
+  background: @extrablue;
+}
+
+.main-nav__link:active {
+  background: @basicblue;
+  color: rgba(@white, 0.3);
+}
+
+.main-nav__toggle {
+  height: 22px;
+  width: 23px;
+  top: 0;
+  left: 0;
+  background: none;
+  background-image: url("../img/icon-menu.svg");
+  border: 0;
+  cursor: pointer;
+}
+
+.main-nav__toggle:hover {
+  opacity: 0.6;
+}
+
+.main-nav__toggle:active {
+  opacity: 0.3;
+}
