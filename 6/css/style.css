@@ -347,7 +347,6 @@
   top: 50%;
   height: 48px;
   width: 48px;
-  background-image: url("../img/shape.svg");
   transform: translateY(-50%);
   background-repeat: no-repeat;
 }
@@ -358,7 +357,6 @@
   top: 50%;
   height: 46px;
   width: 46px;
-  background-image: url("../img/layer.svg");
   transform: translateY(-50%);
   background-repeat: no-repeat;
 }
@@ -465,7 +463,7 @@
   background-repeat: no-repeat;
   background-position: 0 0;
 }
-.footer-copyright {
+.footer__copyright {
   display: flex;
   align-items: center;
 }
