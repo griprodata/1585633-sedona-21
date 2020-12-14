@@ -6,12 +6,22 @@
   background: @blue;
 }
 
-.main-nav__item:hover {
+.main-nav__link {
+  display: block;
+  color: @white;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 40px;
+  text-decoration: none;
+}
+
+.main-nav__link:hover {
   background: @extrablue;
 }
 
-.main-nav__item:active {
+.main-nav__link:active {
   background: @basicblue;
+  color: rgba(@white, 0.3);
 }
 
 .main-nav__toggle {
@@ -31,13 +41,4 @@
 
 .main-nav__toggle:active {
   opacity: 0.3;
-}
-
-.main-nav__link {
-  display: block;
-  color: @white;
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 40px;
-  text-decoration: none;
 }

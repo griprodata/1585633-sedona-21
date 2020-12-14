@@ -15,13 +15,14 @@
   line-height: 21px;
 }
 
-.content__item-blue {
+.content__item--blue {
   color: @white;
   background-color: @blue;
 }
 
-.content__item-black {
+.content__item--black {
   color: @black;
+  background-color: #eeeeee;
 }
 
 .content__advantages-item {
@@ -30,7 +31,7 @@
   margin: 0;
 }
 
-.content__advantages-item-home::before {
+.content__advantages-item--home::before {
   content: "";
   position: absolute;
   top: 0;
@@ -40,7 +41,7 @@
   background-image: url("../img/icon-house.svg");
 }
 
-.content__advantages-item-gift::before {
+.content__advantages-item--gift::before {
   content: "";
   position: absolute;
   top: 0;
@@ -50,7 +51,7 @@
   background-image: url("../img/icon-gift.svg");
 }
 
-.content__advantages-item-burger::before {
+.content__advantages-item--burger::before {
   content: "";
   position: absolute;
   top: 0;

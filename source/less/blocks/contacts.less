@@ -1,17 +1,20 @@
 .contacts__title {
   font-size: 18px;
+  line-height: 26px;
   font-weight: 700;
 }
 
 .contacts__input {
-  background-color: #f2f2f2;
+  background-color: @basicspace;
+  height: 58px;
   border: none;
   font-size: 18px;
+  line-height: 26px;
   font-weight: 700;
 }
 
 .contacts__input:hover {
-  background-color: #e5e5e5;
+  background-color: @extraspace;
 }
 
 .contacts__input:active {
@@ -20,19 +23,46 @@
 
 .contacts__group {
   border: none;
+  border-bottom: 2px solid @extraspace;
 }
 
-.contacts__form ul {
+.contacts__list {
   list-style: none;
 }
 
-.contacts__item label {
-  position: relative;
-  padding-left: 60px;
-  margin: 0;
+.contacts__input-name {
+width: 280px;
 }
 
-.filter-input-radio + label::before {
+.contacts__input-name::before {
+ content: "";
+ position: absolute;
+ bottom: 0;
+ right: 0;
+ width: 58px;
+ height: 58px;
+ background-image: url("../img/layer88.svg");
+ background-repeat: no-repeat;
+  }
+
+.contacts__label {
+  position: relative;
+}
+.contacts__label-radio {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: none;
+  }
+
+.contacts__label-checkbox {
+font-weight: 700;
+font-size: 18px;
+line-height: 26px;
+text-transform: none;
+}
+
+.contacts__input-radio + label::before {
   content: "";
   position: absolute;
   left: 0;
@@ -44,7 +74,7 @@
   background-repeat: no-repeat;
 }
 
-.filter-input-checkbox + label::before {
+.contacts__input-checkbox + label::before {
   content: "";
   position: absolute;
   left: 0;
@@ -56,13 +86,50 @@
   background-repeat: no-repeat;
 }
 
-.contacts__form textarea {
+.contacts__message {
   font-size: 18px;
+  line-height: 26px;
   font-weight: 700;
 }
 
 .contacts__button {
+  font-family: "PT Sans", "Arial", sans-serif;
+  width: 280px;
+  font-size: 21px;
+  line-height: 26px;
+  height: 58px;
+  padding: 32 px 0 32px 0;
   color: @white;
   background-color: @blue;
   border: none;
+  text-transform: uppercase;
 }
+
+.contacts__module {
+  display: none;
+}
+
+.contacts__module-title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.contacts__module-text {
+  line-height: 24px;
+  color: @space;
+}
+
+.contacts__module-button {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  height: 58px;
+  padding: 32 px 0 32px 0;
+  line-height: 26px;
+  color: @white;
+  width: 280px;
+  background: @blue;
+  border: none;
+  text-transform: uppercase;
+}
+

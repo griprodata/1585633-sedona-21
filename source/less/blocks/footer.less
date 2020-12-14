@@ -15,18 +15,18 @@
   width: 46px;
   height: 48px;
   text-decoration: none;
-  background-color: #81b3d2;
+  background-color: @blue;
 }
 
 .footer__link:hover {
-  background-color: #669ec0;
+  background-color: @extrablue;
 }
 
 .footer__link:active {
-  background-color: #5496bd;
+  background-color: @basicblue;
 }
 
-.footer__link-tw::before {
+.footer__link--tw::before {
   display: block;
   content: "";
   width: 17px;
@@ -40,7 +40,7 @@
   background-position: 0 0;
 }
 
-.footer__link-fb::before {
+.footer__link--fb::before {
   display: block;
   content: "";
   width: 9px;
@@ -54,7 +54,7 @@
   background-position: 0 0;
 }
 
-.footer__link-utb::before {
+.footer__link--utb::before {
   display: block;
   content: "";
   width: 19px;
@@ -73,14 +73,14 @@
   align-items: center;
 }
 
-.tw:active::before {
+.footer__link--tw:active::before {
   opacity: 0.3;
 }
 
-.fb:active::before {
+.footer__link--fb:active::before {
   opacity: 0.3;
 }
 
-.utb:active::before {
+.footer__link--utb:active::before {
   opacity: 0.3;
 }
