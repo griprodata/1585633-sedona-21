@@ -29,19 +29,55 @@
 .contacts__list {
   list-style: none;
 }
+.contacts__item {
+  position: relative;
+}
 
-.contacts__input-name {
+.contacts__item--name {
+  margin-bottom: 20px;
+}
+
+.contacts__item--checkbox {
+  margin-bottom: 54px;
+}
+
+.contacts__item--radio{
+  margin-bottom: 43px;
+}
+
+.contacts__input--phone, .contacts__input--mail {
   width: 280px;
 }
 
-.contacts__input-name::before {
+.contacts__input::placeholder {
+  color: @black;
+}
+
+.contacts__message::placeholder {
+  color: @black;
+}
+
+.contacts__label--phone::before {
   content: "";
   position: absolute;
-  bottom: 0;
+  top: 50%;
   right: 0;
   width: 58px;
   height: 58px;
-  background-image: url("../img/layer88.svg");
+  background-image: url("../img/group-phone.svg");
+  transform: translateY(-50%);
+  background-repeat: no-repeat;
+}
+
+.contacts__label--mail::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 58px;
+  height: 58px;
+  background-image: url("../img/group-mail.svg");
+  transform: translateY(-50%);
   background-repeat: no-repeat;
 }
 
@@ -50,6 +86,7 @@
 }
 
 .contacts__label-radio {
+  position: relative;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -63,18 +100,47 @@
   text-transform: none;
 }
 
-.contacts__input-radio + label::before {
+.contacts__label-radio, .contacts__label-checkbox {
+padding-left: 60px;
+}
+
+.contacts__input--radio::before {
   content: "";
   position: absolute;
   left: 0;
   top: 50%;
   height: 48px;
   width: 48px;
+  background-image: url("../img/radio-off.svg");
   transform: translateY(-50%);
   background-repeat: no-repeat;
 }
 
-.contacts__input-checkbox + label::before {
+.contacts__label--radio:checked::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  height: 18px;
+  width: 18px;
+  transform: translateY(-50%);
+  background: url("../img/radio-on.svg");
+  background-repeat: no-repeat;
+}
+
+.contacts__label-checkbox:checked::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  height: 46px;
+  width: 46px;
+  transform: translateY(-50%);
+  background: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+}
+
+.contacts__label-checkbox::before {
   content: "";
   position: absolute;
   left: 0;
@@ -102,6 +168,19 @@
   background-color: @blue;
   border: none;
   text-transform: uppercase;
+}
+
+.contacts__button:hover {
+  background-color: @extrablue;
+}
+
+.contacts__button:active {
+  background-color: @basicblue;
+  color: rgba(@white, 0.3);
+}
+
+.contacts__button:disabled {
+  background-color: @basicwhite;
 }
 
 .contacts__module {

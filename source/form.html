@@ -43,15 +43,15 @@
           <fieldset class="contacts__group">
             <legend class="contacts__title">Представтесь:</legend>
             <ul class="contacts__list">
-              <li class="contacts__item">
+              <li class="contacts__item contacts__item--name">
                 <label class="contacts__label" for="your-name">Имя:</label>
                 <input class="contacts__input" type="text" name="name" id="your-name" placeholder="Петр">
               </li>
-              <li class="contacts__item">
+              <li class="contacts__item contacts__item--name">
                 <label class="contacts__label" for="your-surname">Фамилия*:</label>
                 <input class="contacts__input" type="text" name="surename" id="your-surname" placeholder="Иванов">
               </li>
-              <li class="contacts__item">
+              <li class="contacts__item contacts__item--name">
                 <label class="contacts__label" for="your-patronymic">Отчество:</label>
                 <input class="contacts__input" type="text" name="patronymic" id="your-patronymic"
                   placeholder="Александрович">
@@ -62,30 +62,31 @@
             <legend class="contacts__title">Контактная информация:</legend>
             <ul class="contacts__list">
               <li class="contacts__item">
-                <label class="contacts__label" for="your-number">контактный телефон:</label>
-                <input class="contacts__input contacts__input-name" type="tel" name="number" id="your-number"
+                <label class="contacts__label contacts__label--phone" for="your-number">контактный телефон:
+                <input class="contacts__input contacts__input--phone" type="tel" name="number" id="your-number"
                   placeholder="Введите телефон">
+                </label>
               </li>
               <li class="contacts__item">
-                <label class="contacts__label" for="your-email">электронная почта:</label>
-                <input class="contacts__input contacts__input-name" type="email" name="email" id="your-email" placeholder="Введите e-mail">
+                <label class="contacts__label contacts__label--mail" for="your-email">электронная почта:
+                <input class="contacts__input contacts__input--mail" type="email" name="email" id="your-email" placeholder="Введите e-mail">
+                </label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="contacts__group">
             <legend class="contacts__title">Ваше общее впечатление:</legend>
             <ul class="contacts__list">
-              <li class="contacts__item">
-                <input class="contacts__input visually-hidden contacts__input-radio" type="radio" name="option-radio" id="positively"
-                  checked>
+              <li class="contacts__item contacts__item--radio">
+                <input class="contacts__input visually-hidden contacts__input--radio" type="radio" name="option-radio" id="positively" checked>
                   <label class="contacts__label-radio" for="positively">Скорее положительное</label>
               </li>
-              <li class="contacts__item">
-                <input class="contacts__input visually-hidden contacts__input-radio" type="radio" name="option-radio" id="negatively">
+              <li class="contacts__item contacts__item--radio">
+                <input class="contacts__input visually-hidden contacts__input--radio" type="radio" name="option-radio" id="negatively">
                 <label class="contacts__label-radio" for="negatively">Скороее отрицательное</label>
               </li>
-              <li class="contacts__item">
-                <input class="contacts__input visually-hidden contacts__input-radio" type="radio" name="option-radio" id="no-comments">
+              <li class="contacts__item contacts__item--radio">
+                <input class="contacts__input visually-hidden contacts__input--radio" type="radio" name="option-radio" id="no-comments">
                 <label class="contacts__label-radio" for="no-comments">Затрудняюсь ответить</label>
               </li>
             </ul>
@@ -98,20 +99,20 @@
           <fieldset class="contacts__group">
             <legend class="contacts__title">Посещенные достопримечательности:</legend>
             <ul class="contacts__list">
-              <li class="contacts__item">
-                <input class="contacts__input visually-hidden contacts__input-checkbox" type="checkbox" name="option-checkbox" id="devils-bridge" checked>
+              <li class="contacts__item contacts__item--checkbox">
+                <input class="contacts__input visually-hidden" type="checkbox" name="option-checkbox" id="devils-bridge" checked>
                 <label class="contacts__label-checkbox" for="devils-bridge">Мост Дъявола</label>
               </li>
-              <li class="contacts__item">
-                <input class="contacts__input visually-hidden contacts__input-checkbox" type="checkbox" name="option-checkbox" id="mountain-bell" checked>
+              <li class="contacts__item contacts__item--checkbox">
+                <input class="contacts__input visually-hidden" type="checkbox" name="option-checkbox" id="mountain-bell" checked>
                 <label class="contacts__label-checkbox" for="mountain-bell">Гора-Колокол</label>
               </li>
-              <li class="contacts__item">
-                <input class="contacts__input visually-hidden contacts__input-checkbox" type="checkbox" name="option-checkbox" id="slide-park" checked>
+              <li class="contacts__item contacts__item--checkbox">
+                <input class="contacts__input visually-hidden" type="checkbox" name="option-checkbox" id="slide-park" checked>
                 <label class="contacts__label-checkbox" for="slide-park">Слайд-парк</label>
               </li>
-              <li class="contacts__item">
-                <input class="contacts__input visually-hidden contacts__input-checkbox" type="checkbox" name="option-checkbox" id="red-rocks">
+              <li class="contacts__item contacts__item--checkbox">
+                <input class="contacts__input visually-hidden" type="checkbox" name="option-checkbox" id="red-rocks">
                 <label class="contacts__label-checkbox" for="red-rocks">Красные скалы</label>
               </li>
             </ul>
