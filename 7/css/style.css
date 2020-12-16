@@ -109,6 +109,7 @@
   position: relative;
   padding-left: 50px;
   margin: 0;
+  border-bottom: 1px solid #d6d6d6;
 }
 .content__advantages-item--home::before {
   content: "";
@@ -201,8 +202,6 @@
   display: block;
   height: 20px;
   width: 16px;
-  top: 0;
-  left: 0;
   background-image: url("../img/replay.svg");
   border: 0;
   cursor: pointer;
@@ -211,8 +210,6 @@
   display: block;
   height: 20px;
   width: 32px;
-  top: 0;
-  left: 0;
   background-image: url("../img/subtitles.svg");
   border: 0;
   cursor: pointer;
@@ -221,22 +218,23 @@
   display: block;
   height: 20px;
   width: 20px;
-  top: 0;
-  left: 30px;
   background-image: url("../img/fullscreen.svg");
   border: 0;
   cursor: pointer;
 }
 .video__controls {
+  position: relative;
   height: 45px;
   padding-top: 22px;
   padding-left: 22px;
   padding-right: 23px;
   width: 280px;
-  background-color: #616161;
+  background-color: rgba(0, 0, 0, 0.3);
   margin-bottom: 15px;
+  margin-top: -54px;
 }
 .video__navigation {
+  display: flex;
   height: 66px;
   width: 280px;
   padding: 20px;
@@ -250,7 +248,7 @@
 .video__toggle {
   width: 13px;
   position: absolute;
-  top: 17px;
+  top: -5px;
   left: 61px;
   height: 13px;
   border-radius: 50%;
@@ -304,7 +302,7 @@
 .contacts__input:hover {
   background-color: #e5e5e5;
 }
-.contacts__input:active {
+.contacts__input:focus {
   background-color: #ffffff;
 }
 .contacts__group {
@@ -449,7 +447,7 @@
 .contacts__button:hover {
   background-color: #669ec0;
 }
-.contacts__button:focus {
+.contacts__button:active {
   background-color: #5496bd;
   color: rgba(255, 255, 255, 0.3);
 }
