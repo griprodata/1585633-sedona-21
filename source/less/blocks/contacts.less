@@ -107,35 +107,26 @@
   padding-left: 60px;
 }
 
-.contacts__input--radio::before {
+.contacts__label-radio::before {
   content: "";
   position: absolute;
   left: 0;
   top: 50%;
-  height: 48px;
-  width: 48px;
+  height: 56px;
+  width: 56px;
   transform: translateY(-50%);
+  background-image: url("../img/radio-off.svg");
   background-repeat: no-repeat;
 }
 
-.contacts__label--radio:checked::before {
+.contacts__input--radio:checked + .contacts__label-radio::before {
   content: "";
   position: absolute;
   left: 0;
   top: 50%;
-  height: 18px;
-  width: 18px;
-  transform: translateY(-50%);
-  background-repeat: no-repeat;
-}
-
-.contacts__label-checkbox:checked::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 50%;
-  height: 46px;
-  width: 46px;
+  height: 56px;
+  width: 56px;
+  background-image: url("../img/radio-on.svg");
   transform: translateY(-50%);
   background-repeat: no-repeat;
 }
@@ -145,13 +136,27 @@
   position: absolute;
   left: 0;
   top: 50%;
-  height: 46px;
-  width: 46px;
+  height: 56px;
+  width: 56px;
+  transform: translateY(-50%);
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+}
+
+.contacts__input--checkbox:checked + .contacts__label-checkbox::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  height: 56px;
+  width: 56px;
+  background-image: url("../img/checkbox-on.svg");
   transform: translateY(-50%);
   background-repeat: no-repeat;
 }
 
 .contacts__message {
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
@@ -174,7 +179,7 @@
   background-color: @extrablue;
 }
 
-.contacts__button:active {
+.contacts__button:focus {
   background-color: @basicblue;
   color: rgba(@white, 0.3);
 }
