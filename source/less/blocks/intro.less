@@ -2,8 +2,23 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
+  text-align: center;
 }
 
 .intro__article {
   color: @space;
+  text-align: center;
+}
+
+.intro__image {
+  background-color: @extrablue cover;
+  background-image: url("../img/back-desktop.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (min-width: @tablet-width) {
+  .intro-image {
+    height: 518px;
+  }
 }

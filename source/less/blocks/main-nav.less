@@ -1,5 +1,11 @@
 .main-nav__list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main__wrapper {
+  margin: 20px auto;
 }
 
 .main-nav__item {
@@ -12,7 +18,9 @@
   font-size: 18px;
   font-weight: bold;
   line-height: 40px;
+  background: @blue;
   text-decoration: none;
+  text-align: center;
 }
 
 .main-nav__link:hover {
@@ -25,6 +33,7 @@
 }
 
 .main-nav__toggle {
+  position: absolute;
   height: 22px;
   width: 23px;
   top: 0;
@@ -41,4 +50,24 @@
 
 .main-nav__toggle:active {
   opacity: 0.3;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    padding-top: 16px;
+  }
+
+  .main-nav__link {
+    background: none;
+    margin-right: 30px;
+    color: @black;
+  }
+
+  .main-nav__item {
+    background: none;
+  }
 }
