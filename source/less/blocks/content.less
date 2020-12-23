@@ -108,9 +108,9 @@
     position: absolute;
     top: 0;
     left: 50%;
-    height: 37px;
-    width: 39px;
-    background-image: url("../img/icon-house.svg");
+    height: 75px;
+    width: 72px;
+    background-image: url("../img/icon-house-tablet.svg");
     transform: translateY(-50%);
   }
 
@@ -119,9 +119,9 @@
     position: absolute;
     top: 0;
     left: 50%;
-    height: 38px;
-    width: 32px;
-    background-image: url("../img/icon-gift.svg");
+    height: 75px;
+    width: 63px;
+    background-image: url("../img/icon-gift-tablet.svg");
     transform: translateY(-50%);
   }
 
@@ -130,9 +130,9 @@
     position: absolute;
     top: 0;
     left: 50%;
-    height: 35px;
-    width: 40px;
-    background-image: url("../img/icon-burger.svg");
+    height: 69px;
+    width: 76px;
+    background-image: url("../img/icon-burger-tablet.svg");
     transform: translateY(-50%);
   }
 
@@ -155,6 +155,8 @@
 
   .content__advantages {
     display: flex;
+    justify-content: space-between;
+    width: 100%;
   }
 
   .content__advantages-title {
@@ -164,7 +166,12 @@
   .content__advantages-text {
     text-align: center;
   }
+
+  .content-panel__image {
+    width: 100%;
+  }
 }
+
 
 @media (min-width: @desktop-width) {
   .content__panel {
