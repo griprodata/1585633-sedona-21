@@ -51,9 +51,6 @@
 .main__wrapper {
   margin: 20px auto;
 }
-.main-nav__item {
-  background: #81b3d2;
-}
 .main-nav__link {
   display: block;
   color: #ffffff;
@@ -97,13 +94,21 @@
     padding-top: 16px;
   }
   .main-nav__link {
-    background: none;
     margin-right: 30px;
     color: #000000;
-  }
-  .main-nav__item {
     background: none;
   }
+  .main-nav__link:hover {
+    color: #669ec0;
+    background: none;
+  }
+  .main-nav__link:active {
+    color: rgba(0, 0, 0, 0.3);
+    background: none;
+  }
+}
+.intro {
+  margin-bottom: 30px;
 }
 .intro__title {
   font-size: 18px;
@@ -120,6 +125,7 @@
   background-image: url("../img/back-desktop.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  text-align: center;
 }
 @media (min-width: 768px) {
   .intro-image {
@@ -219,9 +225,9 @@
     position: absolute;
     top: 0;
     left: 50%;
-    height: 37px;
-    width: 39px;
-    background-image: url("../img/icon-house.svg");
+    height: 75px;
+    width: 72px;
+    background-image: url("../img/icon-house-tablet.svg");
     transform: translateY(-50%);
   }
   .content__advantages-item--gift::before {
@@ -229,9 +235,9 @@
     position: absolute;
     top: 0;
     left: 50%;
-    height: 38px;
-    width: 32px;
-    background-image: url("../img/icon-gift.svg");
+    height: 75px;
+    width: 63px;
+    background-image: url("../img/icon-gift-tablet.svg");
     transform: translateY(-50%);
   }
   .content__advantages-item--burger::before {
@@ -239,9 +245,9 @@
     position: absolute;
     top: 0;
     left: 50%;
-    height: 35px;
-    width: 40px;
-    background-image: url("../img/icon-burger.svg");
+    height: 69px;
+    width: 76px;
+    background-image: url("../img/icon-burger-tablet.svg");
     transform: translateY(-50%);
   }
   .content__item--black {
@@ -259,12 +265,17 @@
   }
   .content__advantages {
     display: flex;
+    justify-content: space-between;
+    width: 100%;
   }
   .content__advantages-title {
     text-align: center;
   }
   .content__advantages-text {
     text-align: center;
+  }
+  .content-panel__image {
+    width: 100%;
   }
 }
 @media (min-width: 1200px) {
@@ -375,6 +386,9 @@
   border-radius: 50%;
   background-color: #ffffff;
   cursor: pointer;
+}
+.search {
+  margin-bottom: 30px;
 }
 .search__wrapper {
   display: flex;
@@ -697,6 +711,7 @@
        object-fit: cover;
     height: 350px;
     width: 100%;
+    margin-bottom: 20px;
   }
   .footer__wrapper {
     display: flex;
