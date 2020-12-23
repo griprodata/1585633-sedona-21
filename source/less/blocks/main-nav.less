@@ -8,10 +8,6 @@
   margin: 20px auto;
 }
 
-.main-nav__item {
-  background: @blue;
-}
-
 .main-nav__link {
   display: block;
   color: @white;
@@ -62,12 +58,19 @@
   }
 
   .main-nav__link {
-    background: none;
     margin-right: 30px;
     color: @black;
+    background: none;
   }
 
-  .main-nav__item {
+  .main-nav__link:hover {
+    color: @extrablue;
+    background: none;
+  }
+
+  .main-nav__link:active {
+    color: rgba(@black, 0.3);
     background: none;
   }
 }
+
