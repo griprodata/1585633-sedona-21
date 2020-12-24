@@ -1,4 +1,9 @@
+.main-nav {
+  position: relative;
+}
+
 .main-nav__list {
+  display: none;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -49,6 +54,14 @@
 }
 
 @media (min-width: @tablet-width) {
+  .main-nav {
+    display: block;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
   .main-nav__list {
     display: flex;
     margin: 0;
