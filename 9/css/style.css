@@ -165,10 +165,10 @@
 }
 @media (min-width: 1200px) {
   .intro__title {
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   }
   .intro__article {
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   }
 }
 .content__list {
@@ -323,13 +323,13 @@
 @media (min-width: 1200px) {
   .content__panel {
     width: 400px;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   }
   .content__advantages {
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   }
   .content__item--black {
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   }
   .content__advantages-item {
     width: 33.33%;
@@ -485,10 +485,10 @@
 }
 @media (min-width: 1200px) {
   .search__title {
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   }
   .search__article {
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   }
 }
 .contacts__title {
