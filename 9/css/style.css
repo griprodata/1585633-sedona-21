@@ -35,17 +35,17 @@
   line-height: 26px;
   font-style: normal;
   text-transform: uppercase;
-  background-color: #ffffff;
+  background-color: #eeeeee;
   color: #000000;
   margin: 0;
 }
 @media (min-width: 1200px) {
-  .page__body {
-    background-color: #eeeeee;
-  }
   .page__container {
     width: 1200px;
     margin: 0 auto;
+  }
+  .page__body {
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   }
 }
 .page-header {
@@ -138,6 +138,9 @@
     background: none;
   }
 }
+.intro {
+  background-color: #ffffff;
+}
 .intro__title {
   font-size: 18px;
   line-height: 26px;
@@ -149,7 +152,7 @@
   text-align: center;
 }
 .intro__image {
-  background-color: #669ec0 cover;
+  background-color: #669ec0 / cover;
   background-image: url("../img/back-desktop.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -161,8 +164,11 @@
   }
 }
 @media (min-width: 1200px) {
-  .intro {
-    background-color: #ffffff;
+  .intro__title {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .intro__article {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 }
 .content__list {
@@ -317,6 +323,16 @@
 @media (min-width: 1200px) {
   .content__panel {
     width: 400px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .content__advantages {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .content__item--black {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .content__advantages-item {
+    width: 33.33%;
   }
 }
 .photo__list {
@@ -423,6 +439,9 @@
   background-color: #ffffff;
   cursor: pointer;
 }
+.search {
+  background-color: #ffffff;
+}
 .search__wrapper {
   display: flex;
   flex-direction: column;
@@ -465,8 +484,11 @@
   background-color: #e5e5e5;
 }
 @media (min-width: 1200px) {
-  .search {
-    background-color: #ffffff;
+  .search__title {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .search__article {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 }
 .contacts__title {
@@ -663,6 +685,9 @@
   border: none;
   text-transform: uppercase;
 }
+.footer {
+  background-color: #ffffff;
+}
 .footer__wrapper {
   display: flex;
   flex-direction: column;
@@ -759,11 +784,6 @@
     flex-direction: row;
     justify-content: space-between;
     margin: 0 40px;
-  }
-}
-@media (min-width: 1200px) {
-  .footer {
-    background-color: #ffffff;
   }
 }
 
