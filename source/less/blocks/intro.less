@@ -1,9 +1,39 @@
+.intro {
+  background-color: @white;
+}
+
 .intro__title {
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
+  text-align: center;
 }
 
 .intro__article {
   color: @space;
+  text-align: center;
+}
+
+.intro__image {
+  background-color: @extrablue / cover;
+  background-image: url("../img/back-desktop.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .intro-image {
+    height: 518px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .intro__title {
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .intro__article {
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  }
 }

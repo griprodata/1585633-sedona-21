@@ -5,7 +5,18 @@
   line-height: 26px;
   font-style: normal;
   text-transform: uppercase;
-  background-color: @white;
+  background-color: @extrawhite;
   color: @black;
   margin: 0;
+}
+
+@media (min-width: @desktop-width) {
+  .page__container {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .page__body {
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  }
 }

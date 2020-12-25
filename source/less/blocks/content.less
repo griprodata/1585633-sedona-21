@@ -1,5 +1,17 @@
 .content__list {
   list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.content__item {
+  text-align: center;
+  list-style: none;
+}
+
+.content__panel {
+  padding: 20px;
+  background-color: @blue;
 }
 
 .content__intro {
@@ -17,12 +29,12 @@
 
 .content__item--blue {
   color: @white;
-  background-color: @blue;
 }
 
 .content__item--black {
   color: @black;
   background-color: @extrawhite;
+  padding: 20px;
   border-bottom: 1px solid @extra-basicwhite;
 }
 
@@ -64,6 +76,7 @@
 
 .content__advantages {
   background-color: @white;
+  padding: 25px;
 }
 
 .content__advantages-title {
@@ -71,9 +84,114 @@
   line-height: 26px;
   color: @black;
   font-weight: 700;
+  text-align: left;
 }
 
 .content__advantages-text {
   line-height: 21px;
   color: @space;
+  text-align: left;
+}
+
+@media (min-width: @tablet-width) {
+  .content__container {
+    display: flex;
+  }
+
+  .content__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .content__advantages-item {
+    padding: 0;
+  }
+
+  .content__advantages-item--home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 75px;
+    width: 72px;
+    background-image: url("../img/icon-house-tablet.svg");
+    transform: translateY(-50%);
+  }
+
+  .content__advantages-item--gift::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 75px;
+    width: 63px;
+    background-image: url("../img/icon-gift-tablet.svg");
+    transform: translateY(-50%);
+  }
+
+  .content__advantages-item--burger::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 69px;
+    width: 76px;
+    background-image: url("../img/icon-burger-tablet.svg");
+    transform: translateY(-50%);
+  }
+
+  .content__item--black {
+    width: 33.33%;
+    border-bottom: none;
+  }
+
+  .content__item--blue {
+    width: 100%;
+  }
+
+  .content__block {
+    display: flex;
+  }
+
+  .content__panel--two {
+    order: 2;
+  }
+
+  .content__advantages {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .content__advantages-title {
+    text-align: center;
+  }
+
+  .content__advantages-text {
+    text-align: center;
+  }
+
+  .content__img {
+    width: 100%;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .content__panel {
+    width: 400px;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .content__advantages {
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .content__item--black {
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .content__advantages-item {
+    width: 33.33%;
+  }
 }
