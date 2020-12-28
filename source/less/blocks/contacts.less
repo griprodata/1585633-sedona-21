@@ -1,7 +1,17 @@
+.contacts {
+  background-color: @white;
+}
+
 .contacts__title {
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
+  text-align: center;
+}
+
+.contacts__article {
+  color: @space;
+  display: none;
 }
 
 .contacts__input {
@@ -26,6 +36,10 @@
 .contacts__group {
   border: none;
   border-bottom: 2px solid @extraspace;
+}
+
+.contacts__list--mail {
+  padding: 0;
 }
 
 .contacts__list {
@@ -162,6 +176,7 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
+  background-color: @basicspace;
 }
 
 .contacts__button {
@@ -209,11 +224,95 @@
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   height: 58px;
-  padding: 32 px 0 32px 0;
   line-height: 26px;
   color: @white;
   width: 280px;
   background: @blue;
   border: none;
   text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts__form {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+
+  .contacts__article {
+    display: block;
+  }
+
+  .contacts__group--name {
+    order: 2;
+  }
+
+  .contacts__group--mail {
+    order: 3;
+    width: 100%;
+  }
+
+  .contacts__group--radio {
+    order: 1;
+    width: 50%;
+  }
+
+  .contacts__list--radio {
+    padding: 0;
+    margin: 0;
+  }
+
+  .contacts__group--checkbox {
+    order: 4;
+    width: 100%;
+  }
+
+  .contacts__group--message {
+    order: 5;
+    width: 100%;
+  }
+
+  .contacts__blocks {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contacts__list--checkbox {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  .contacts__item--checkbox {
+    width: 50%;
+  }
+
+  .contacts__message {
+    width: 100%;
+  }
+
+  .contacts__input--mail,
+  .contacts__input--phone {
+    width: 100%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts__list--mail {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contacts__group--checkbox {
+    width: 100%;
+  }
+
+  .contacts__list--checkbox {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contacts__item--checkbox {
+    width: 25%;
+  }
 }

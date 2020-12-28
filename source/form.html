@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page__body">
+  <div class="page__container">
   <header class="page-header">
     <a class="page-header__logo" href="index.html">
       <img src="img/logotype-mobile.svg" width="102" height="84" alt="Седона"></a>
@@ -31,7 +32,7 @@
   <main class="page-main">
     <section class="photo">
       <h1 class="visually-hidden">Контактная информация</h1>
-        <div class="photo__image"><img src="img/back-desktop.jpg" alt="седона"></div>
+        <div class="photo__image"><img src="" alt="седона"></div>
         <h2 class="photo__title">Оставте свой отзыв</h2>
         <p class="photo__text">Помогите нашим отелям стать лучше!<br>
           оставте отзыв оних, а также о посещенных вами
@@ -41,7 +42,7 @@
       <h2 class="visually-hidden">Ваши данные</h2>
       <div class="contacts__wrapper">
         <form class="contacts__form" action="https://echo.htmlacademy.ru" method="get">
-          <fieldset class="contacts__group">
+          <fieldset class="contacts__group contacts__group--name">
             <legend class="contacts__title">Представтесь:</legend>
             <ul class="contacts__list">
               <li class="contacts__item contacts__item--name">
@@ -59,9 +60,9 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="contacts__group">
+          <fieldset class="contacts__group contacts__group--mail">
             <legend class="contacts__title">Контактная информация:</legend>
-            <ul class="contacts__list">
+            <ul class="contacts__list contacts__list--mail">
               <li class="contacts__item">
                 <label class="contacts__label contacts__label--phone" for="your-number">контактный телефон:
                 <input class="contacts__input contacts__input--phone" type="tel" name="number" id="your-number"
@@ -75,9 +76,9 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="contacts__group">
+          <fieldset class="contacts__group contacts__group--radio">
             <legend class="contacts__title">Ваше общее впечатление:</legend>
-            <ul class="contacts__list">
+            <ul class="contacts__list contacts__list--radio">
               <li class="contacts__item contacts__item--radio">
                 <input class="contacts__input visually-hidden contacts__input--radio" type="radio" name="option-radio" id="positively" checked>
                   <label class="contacts__label-radio" for="positively">Скорее положительное</label>
@@ -97,9 +98,9 @@
               <button class="contacts__module-button" type="submit">ок</button>
             </div>
           </fieldset>
-          <fieldset class="contacts__group">
+          <fieldset class="contacts__group contacts__group--checkbox">
             <legend class="contacts__title">Посещенные достопримечательности:</legend>
-            <ul class="contacts__list">
+            <ul class="contacts__list contacts__list--checkbox">
               <li class="contacts__item contacts__item--checkbox">
                 <input class="contacts__input visually-hidden contacts__input--checkbox" type="checkbox" name="option-checkbox" id="devils-bridge" checked>
                 <label class="contacts__label-checkbox" for="devils-bridge">Мост Дъявола</label>
@@ -118,12 +119,15 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="contacts__group">
+          <fieldset class="contacts__group contacts__group--message">
             <legend class="contacts__title">Опишите свои эмоции:</legend>
             <label for="your-message"></label>
-            <textarea class="contacts__message" name="text" id="your-message" cols="30" rows="10"
+            <textarea class="contacts__message" name="text" id="your-message" cols="30" rows="6"
               placeholder="Опишите подробно все свои восторги"></textarea>
+              <div class="contacts__blocks">
             <button class="contacts__button" type="submit">Отправить отзыв</button>
+            <p class="contacts__article">*_обязательные поля</p>
+            </div>
             <div class="contacts__module">
               <p class="contacts__module-title">Ваш отзыв отправлен!</p>
               <p class="contacts__module-text">Спасибо за ваше участие, Ваш отзыв уже поступил к нам.<br> В ближайшее время бы опобликуем его на сайте.</p>
@@ -136,7 +140,6 @@
   </main>
   <footer class="footer">
     <div class="footer__wrapper">
-      <img src="img/group-map.jpg" width="320" height="350" alt="карта">
       <p class="footer__title">#visitsedona</p>
       <ul class="footer__list">
         <li class="footer__item">
@@ -157,5 +160,6 @@
       </p>
     </div>
   </footer>
+  </div>
 </body>
 </html>

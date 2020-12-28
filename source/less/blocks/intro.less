@@ -12,28 +12,20 @@
 .intro__article {
   color: @space;
   text-align: center;
+  margin: 0;
 }
 
 .intro__image {
-  background-color: @extrablue / cover;
+  background-color: @extrablue;
   background-image: url("../img/back-desktop.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   text-align: center;
 }
 
 @media (min-width: @tablet-width) {
   .intro-image {
     height: 518px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .intro__title {
-    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  }
-
-  .intro__article {
-    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   }
 }
