@@ -8,6 +8,16 @@
   padding: 0;
 }
 
+.photo__image {
+  height: 518px;
+  background-color: @extrablue;
+  background-image: url("../img/back-desktop.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+
 .photo__item {
   border-bottom: 2px solid @extraspace;
 }
@@ -51,4 +61,80 @@
   background-image: url("../img/like-icon.svg");
   border: 0;
   cursor: pointer;
+}
+
+@media (min-width: @tablet-width) {
+  .photo__list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 60px;
+    margin-bottom: 59px;
+  }
+
+  .photo__text {
+    margin-bottom: 65px;
+  }
+
+  .photo__item {
+    border-bottom: none;
+  }
+
+  .photo__item--small {
+    width: 50%;
+  }
+
+  .photo__item--big {
+    width: 100%;
+  }
+
+  .photo__img {
+    width: 100%;
+  }
+
+  .photo__img--first {
+    height: 400px;
+  }
+
+  .photo__block {
+    width: 50%;
+  }
+
+  .photo__alibaba {
+    background-color: @basicspace;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .photo__bloknot {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo__list {
+    padding: 0;
+    margin-bottom: 63px;
+  }
+
+  .photo__text {
+    margin-bottom: 67px;
+  }
+
+  .photo__item {
+    position: relative;
+    color: @white;
+  }
+
+  .photo__item--small {
+    width: 33.33%;
+  }
+
+  .photo__alibaba {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: rgba(@black, 0.3);
+  }
 }
