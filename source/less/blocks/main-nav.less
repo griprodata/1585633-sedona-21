@@ -66,14 +66,22 @@
     display: flex;
     margin: 0;
     padding: 0;
-    justify-content: space-between;
     padding-top: 16px;
   }
 
+  .main-nav__item {
+    width: 153px;
+
+    &:nth-child(3) {
+      margin-left: auto;
+    }
+  }
+
   .main-nav__link {
-    margin-right: 30px;
     color: @black;
     background: none;
+    font-size: 14px;
+    line-height: 26px;
   }
 
   .main-nav__link:hover {
