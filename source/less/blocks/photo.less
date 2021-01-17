@@ -1,5 +1,6 @@
 .photo {
   background-color: @white;
+  margin-bottom: 31px;
 }
 
 .photo__list {
@@ -9,25 +10,35 @@
 }
 
 .photo__image {
-  height: 214px;
+  position: relative;
+  height: 158px;
   background-color: @extrablue;
   background-image: url("../img/back-desktop.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   text-align: center;
+  margin-bottom: 32px;
+}
+
+.photo__sedona {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .photo__item {
+  margin-bottom: 21px;
   border-bottom: 2px solid @extraspace;
 }
-
 
 .photo__title {
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   text-align: center;
+  margin-bottom: 28px;
 }
 
 .photo__text {
@@ -35,26 +46,50 @@
   color: @space;
   text-align: center;
   margin: 0;
+  padding: 0 20px;
+  margin-bottom: 54px;
+}
+
+.photo__alibaba {
+  padding-bottom: 18px;
 }
 
 .photo__intro {
   font-weight: 700;
+  font-size: 14px;
+  margin: 0;
   line-height: 24px;
 }
 
-.photo-article {
+.photo__description {
+  padding: 0 20px;
+}
+
+.photo__bloknot {
+  display: flex;
+  padding: 0 20px;
+}
+
+.photo__article {
+  margin: 0;
   line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 14px;
+  text-transform: none;
   color: @space;
 }
 
 .photo__number {
+  margin: 0;
   font-weight: 700;
   line-height: 24px;
 }
 
 .photo__img {
+  object-fit: cover;
   width: 100%;
   height: 280px;
+  padding: 0 20px;
 }
 
 .photo__button {
@@ -63,6 +98,7 @@
   width: 23px;
   top: 0;
   left: 0;
+  margin-right: 14px;
   background: none;
   background-image: url("../img/like-icon.svg");
   border: 0;
@@ -77,12 +113,33 @@
     margin-bottom: 59px;
   }
 
-  .photo__text {
-    margin-bottom: 65px;
+  .photo__item {
+    margin: 0;
+    border-bottom: none;
   }
 
-  .photo__item {
-    border-bottom: none;
+  .photo__image {
+    height: 290px;
+    margin-bottom: 63px;
+  }
+
+  .photo__img {
+    display: block;
+    padding: 0;
+    height: 267px;
+    width: 100%;
+  }
+
+  .photo__title {
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 34px;
+  }
+
+  .photo__text {
+    margin-bottom: 78px;
+    padding: 0 165px;
+
   }
 
   .photo__item--small {
@@ -90,10 +147,6 @@
   }
 
   .photo__item--big {
-    width: 100%;
-  }
-
-  .photo__img {
     width: 100%;
   }
 

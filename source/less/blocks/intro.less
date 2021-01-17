@@ -7,25 +7,68 @@
   line-height: 26px;
   font-weight: 700;
   text-align: center;
+  margin-bottom: 30px;
+  padding: 0 30px;
 }
 
 .intro__article {
   color: @space;
   text-align: center;
   margin: 0;
+  padding: 0 20px;
+  margin-bottom: 29px;
 }
 
 .intro__image {
+  position: relative;
+  height: 389px;
   background-color: @extrablue;
   background-image: url("../img/back-desktop.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   text-align: center;
+  margin-bottom: 33px;
+}
+
+.intro__photo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 @media (min-width: @tablet-width) {
-  .intro-image {
+  .intro {
+    margin-bottom: 53px;
+  }
+
+  .intro__title {
+    padding: 0 160px;
+    font-size: 21px;
+  }
+
+  .intro__image {
     height: 518px;
+    margin-bottom: 45px;
   }
 }
+
+@media (min-width: @desktop-width) {
+  .intro {
+    margin-bottom: 20px;
+  }
+
+  .intro__image {
+    margin-bottom: 54px;
+  }
+
+  .intro__title {
+    padding: 0 300px;
+  }
+
+  .intro__article {
+    margin-bottom: 44px;
+  }
+}
+

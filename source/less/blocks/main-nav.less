@@ -16,7 +16,7 @@
 .main-nav__link {
   display: block;
   color: @white;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: bold;
   line-height: 40px;
   background: @blue;
@@ -37,8 +37,8 @@
   position: absolute;
   height: 22px;
   width: 23px;
-  top: 0;
-  left: 0;
+  top: 17px;
+  right: 20px;
   background: none;
   background-image: url("../img/icon-menu.svg");
   border: 0;
@@ -92,5 +92,15 @@
   .main-nav__link:active {
     color: rgba(@black, 0.3);
     background: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__item {
+    width: 239px;
+
+    &:nth-child(3) {
+      margin-left: auto;
+    }
   }
 }

@@ -10,14 +10,18 @@
   <div class="page__container">
     <header class="page-header">
       <a class="page-header__logo" href="index.html">
-        <img src="img/logotype-mobile.svg" width="102" height="84" alt="Седона"></a>
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+        <img src="img/logotype-mobile.svg" width="102" height="84" alt="Седона">
+      </picture>
+      </a>
       <nav class="main-nav">
         <button class=" main-nav__toggle" aria-label="бургер" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
-            <li class="c">
+            <li class="main-nav__item">
               <a class="main-nav__link" href="index.html">Главная</a></li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="catalog.html">Фото и Видео </a></li>
@@ -31,13 +35,14 @@
     </header>
     <main class="page-main">
       <section class="photo">
-        <div class="photo__image"><img src="img/sedona-tablet.svg" width="239" height="39" alt="седона"></div>
+        <div class="photo__image">
+          <img class="photo__sedona" src="img/sedona-tablet.svg" width="239" height="39" alt="седона"></div>
         <h1 class="photo__title">Фото и Видео</h1>
-        <p class="photo__text">Не можете решиться на путешествие из-закурса?
-          фотографии помогут вам забытьо политике и экономике.
+        <p class="photo__text">Не можете решиться на путешествие из-за курса?
+          фотографии помогут вам забыть о политике и экономике.
           <ul class="photo__list">
             <li class="photo__item photo__item--big">
-              <img class="photo__img photo__img--first" src="img/photo-1-mobile.jpg" width="300"
+              <img class="photo__img photo__img--first" src="img/photo-1-mobile.jpg" width="280" height="280"
                 alt="Неродные просторы">
               <div class="photo__alibaba">
                 <div class="photo__description">
@@ -68,7 +73,7 @@
               <img class="photo__img" src="img/photo-3-mobile.jpg" width="280" height="280" alt="Дорога и север">
               <div class="photo__alibaba">
                 <div class="photo__description">
-                  <h3 class="photo__intro">Дорога и север</h3>
+                  <h3 class="photo__intro">Дорога на север</h3>
                   <p class="photo__article">Автор фото: Петр</p>
                 </div>
                 <div class="photo__bloknot">
@@ -129,7 +134,7 @@
           </li>
         </ul>
         <p class="footer__copyright">
-          <span class="footer__copyright-text">Разработанно</span>
+          <span class="footer__copyright-text">Разработано</span>
           <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
             <img class="footer__copyright-image" src="img/htmlacademy.svg" width="27" height="34"
               alt="логотип html академии"></a>

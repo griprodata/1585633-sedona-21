@@ -32,10 +32,10 @@
   <main class="page-main">
     <section class="photo">
       <h1 class="visually-hidden">Контактная информация</h1>
-        <div class="photo__image"><img src="img/sedona-tablet.svg" alt="седона"></div>
-        <h2 class="photo__title">Оставте свой отзыв</h2>
+        <div class="photo__image"><img src="img/sedona-tablet.svg" width="229" height="39" alt="седона"></div>
+        <h2 class="photo__title">Оставьте свой отзыв</h2>
         <p class="photo__text">Помогите нашим отелям стать лучше!<br>
-          оставте отзыв оних, а также о посещенных вами
+          оставьте отзыв о них,а также о посещенных вами
           достопримечательностях</p>
     </section>
     <section class="contacts">
@@ -43,10 +43,10 @@
       <div class="contacts__wrapper">
         <form class="contacts__form" action="https://echo.htmlacademy.ru" method="get">
           <fieldset class="contacts__group contacts__group--name">
-            <legend class="contacts__title">Представтесь:</legend>
-            <ul class="contacts__list">
+            <legend class="contacts__title">Представьтесь:</legend>
+            <ul class="contacts__list contacts__list--name">
               <li class="contacts__item contacts__item--name">
-                <label class="contacts__label" for="your-name">Имя:</label>
+                <label class="contacts__label" for="your-name">Имя*:</label>
                 <input class="contacts__input" type="text" name="name" id="your-name" placeholder="Петр">
               </li>
               <li class="contacts__item contacts__item--name">
@@ -64,13 +64,13 @@
             <legend class="contacts__title">Контактная информация:</legend>
             <ul class="contacts__list contacts__list--mail">
               <li class="contacts__item">
-                <label class="contacts__label contacts__label--phone" for="your-number">контактный телефон:
+                <label class="contacts__label contacts__label--phone" for="your-number">контактный телефон*:
                 <input class="contacts__input contacts__input--phone" type="tel" name="number" id="your-number"
                   placeholder="Введите телефон">
                 </label>
               </li>
               <li class="contacts__item">
-                <label class="contacts__label contacts__label--mail" for="your-email">электронная почта:
+                <label class="contacts__label contacts__label--mail" for="your-email">электронная почта*:
                 <input class="contacts__input contacts__input--mail" type="email" name="email" id="your-email" placeholder="Введите e-mail">
                 </label>
               </li>

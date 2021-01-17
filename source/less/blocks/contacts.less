@@ -35,7 +35,19 @@
 
 .contacts__group {
   border: none;
+  margin: 0;
   border-bottom: 2px solid @extraspace;
+}
+
+.contacts__group--name {
+  padding: 0 20px;
+}
+
+.contacts__item--name {
+  display: flex;
+
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .contacts__list--mail {
@@ -44,14 +56,12 @@
 
 .contacts__list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .contacts__item {
   position: relative;
-}
-
-.contacts__item--name {
-  margin-bottom: 20px;
 }
 
 .contacts__item--checkbox {
@@ -176,6 +186,7 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
+  border: none;
   background-color: @basicspace;
 }
 
