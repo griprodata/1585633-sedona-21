@@ -217,18 +217,35 @@
 }
 
 .contacts__module {
-  display: none;
+  position: fixed;
+  padding-top: 26px;
+  padding-left: 100px;
+  padding-right: 100px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: block;
+  padding-bottom: 35px;
+  background-color: @white;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
 }
 
 .contacts__module-title {
   font-size: 18px;
   font-weight: 700;
+  padding-top: 20px;
+  margin: 0;
+  margin-top: 18px;
+  margin-bottom: 26px;
   line-height: 26px;
 }
 
 .contacts__module-text {
   line-height: 24px;
+  padding: 0 30px;
   color: @space;
+  margin-bottom: 60px;
 }
 
 .contacts__module-button {
@@ -237,10 +254,43 @@
   height: 58px;
   line-height: 26px;
   color: @white;
-  width: 280px;
   background: @blue;
   border: none;
   text-transform: uppercase;
+}
+
+.contacts__module--first {
+  display: none;
+  width: 320px;
+  height: 280px;
+  padding: 0 20px;
+  background: @white;
+}
+
+.contacts__module-title--first {
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 26px;
+}
+
+.contacts__module-text--first {
+  margin-bottom: 23px;
+}
+
+.contacts__module-button--first {
+  width: 180px;
+}
+
+.contacts__module--two {
+  display: none;
+  background: @white;
+  width: 320px;
+  height: 323px;
+  padding: 0 20px;
+}
+
+.contacts__module-button--two {
+  width: 280px;
 }
 
 @media (min-width: @tablet-width) {
@@ -306,6 +356,51 @@
   .contacts__input--phone {
     width: 100%;
   }
+
+  .contacts__module--first {
+    width: 400px;
+    height: 347px;
+  }
+
+  .contacts__module-title--first {
+    margin-top: 45px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    padding: 0 55px;
+  }
+
+  .contacts__module-text--first {
+    margin-bottom: 37px;
+  }
+
+  .contacts__module-button--first {
+    width: 272px;
+  }
+
+  .contacts__module--two {
+    width: 640px;
+    height: 347px;
+  }
+
+  .contacts__modele-title--two {
+    margin: 0;
+    margin-top: 8px;
+    margin-bottom: 31px;
+  }
+
+  .contacts__modele-text--two {
+    padding: 0 10px;
+    margin-bottom: 87px;
+  }
+
+  .contacts__module-title {
+    font-size: 30px;
+  }
+
+  .contacts__module-button--two {
+    width: 458px;
+    font-size: 21px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -325,5 +420,13 @@
 
   .contacts__item--checkbox {
     width: 25%;
+  }
+
+  .contacts__module--first {
+    padding: 0 20px;
+  }
+
+  .contacts__module-button--first {
+    width: 272px;
   }
 }
