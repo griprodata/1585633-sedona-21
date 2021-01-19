@@ -14,10 +14,23 @@
 }
 
 .content__panel {
+  position: relative;
   padding: 20px;
   background-color: @blue;
-  padding-top: 54px;
+  padding-top: 71px;
   padding-bottom: 39px;
+}
+
+.content__panel-before::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 37px;
+  background-image: url("../img/mwhite.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .content__panel--two {
@@ -144,6 +157,10 @@
     margin-bottom: 57px;
   }
 
+  .content__panel-before::before {
+    display: none;
+  }
+
   .content__container {
     display: flex;
   }
@@ -243,7 +260,7 @@
 
   .content__panel--two {
     order: 2;
-    padding-top: 43px;
+    padding: 42px 34px;
   }
 
   .content__advantages {
@@ -261,6 +278,7 @@
 
   .content__advantages-text {
     text-align: center;
+    padding: 0 2px;
   }
 
   .content__img {
@@ -305,6 +323,14 @@
   }
 
   .content__intro {
-    padding: 0 70px;
+    padding: 0 91px;
+  }
+
+  .content__advantages-text {
+    padding: 0 20px;
+  }
+
+  .content__article {
+    padding: 0 20px;
   }
 }
