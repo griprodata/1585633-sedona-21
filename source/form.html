@@ -47,14 +47,14 @@
       <div class="contacts__wrapper">
         <form class="contacts__form" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="contacts__group contacts__group--name">
-            <legend class="contacts__title">Представьтесь:</legend>
+            <legend class="contacts__title contacts__title--name">Представьтесь:</legend>
             <ul class="contacts__list contacts__list--name">
               <li class="contacts__item contacts__item--name">
                 <label class="contacts__label" for="your-name">Имя*:</label>
                 <input class="contacts__input contacts__input--name" type="text" name="name" id="your-name" placeholder="Петр">
               </li>
               <li class="contacts__item contacts__item--name">
-                <label class="contacts__label" for="your-surname">Фамилия*:</label>
+                <label class="contacts__label contacts__label--name" for="your-surname">Фамилия*:</label>
                 <input class="contacts__input contacts__input--surename" type="text" name="surename" id="your-surname" placeholder="Иванов">
               </li>
               <li class="contacts__item contacts__item--name">
@@ -65,7 +65,7 @@
             </ul>
           </fieldset>
           <fieldset class="contacts__group contacts__group--mail">
-            <legend class="contacts__title">Контактная информация:</legend>
+            <legend class="contacts__title contacts__title--mail">Контактная информация:</legend>
             <ul class="contacts__list contacts__list--mail">
               <li class="contacts__item">
                 <label class="contacts__label contacts__label--phone" for="your-number">контактный телефон*:
@@ -89,7 +89,7 @@
               </li>
               <li class="contacts__item contacts__item--radio">
                 <input class="contacts__input visually-hidden contacts__input--radio" type="radio" name="option-radio" id="negatively">
-                <label class="contacts__label-radio" for="negatively">Скороее отрицательное</label>
+                <label class="contacts__label-radio" for="negatively">Скорее отрицательное</label>
               </li>
               <li class="contacts__item contacts__item--radio">
                 <input class="contacts__input visually-hidden contacts__input--radio" type="radio" name="option-radio" id="no-comments">
@@ -135,7 +135,7 @@
             <div class="contacts__module contacts__module--two">
               <p class="contacts__module-title contacts__modele-title--two">Ваш отзыв отправлен!</p>
               <p class="contacts__module-text contacts__modele-text--two">Спасибо за ваше участие, Ваш отзыв уже поступил к нам.<br> В ближайшее время мы опобликуем его на сайте.</p>
-              <button class="contacts__module-button contacts__module-button--two" type="submit">закрыть окно</button>
+              <button class="contacts__module-button contacts__module-button--two" type="button">закрыть окно</button>
             </div>
           </fieldset>
         </form>

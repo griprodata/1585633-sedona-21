@@ -15,7 +15,6 @@
 
 .content__panel {
   position: relative;
-  padding: 20px;
   background-color: @blue;
   padding-top: 71px;
   padding-bottom: 39px;
@@ -78,14 +77,13 @@
   display: none;
 }
 
-.content__border::before {
+.content__item--black::before {
   content: "";
   position: absolute;
   bottom: 0;
-  left: 50%;
-  width: 280px;
+  left: 20px;
+  right: 20px;
   height: 1px;
-  transform: translate(-50%, -50%);
   background-color: @extra-basicwhite;
 }
 
@@ -255,7 +253,7 @@
   }
 
   .content__panel--one {
-    padding-top: 41px;
+    padding: 40px 20px;
   }
 
   .content__panel--two {
@@ -306,6 +304,15 @@
     width: 400px;
     flex: none;
   }
+
+  .content__panel--one {
+    padding: 48px 20px;
+  }
+
+  .content__panel--two {
+    padding: 52px 20px;
+  }
+
 
   .content__number {
     margin-bottom: 23px;

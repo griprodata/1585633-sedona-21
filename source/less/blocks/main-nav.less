@@ -3,10 +3,12 @@
 }
 
 .main-nav__list {
-  display: none;
+  position: relative;
+  display: block;
   list-style: none;
   margin: 0;
   padding: 0;
+  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 0.2);
 }
 
 .main__wrapper {
@@ -16,12 +18,15 @@
 .main-nav__link {
   display: block;
   color: @white;
-  font-size: 17px;
+  font-size: 18px;
   font-weight: bold;
+  height: 55px;
+  padding: 9px;
   line-height: 40px;
   background: @blue;
   text-decoration: none;
   text-align: center;
+  border-bottom: 1px solid white;
 }
 
 .main-nav__link:hover {
@@ -37,10 +42,23 @@
   position: absolute;
   height: 22px;
   width: 23px;
-  top: 17px;
+  bottom: -39px;
   right: 20px;
   background: none;
   background-image: url("../img/icon-menu.svg");
+  border: 0;
+  cursor: pointer;
+}
+
+.main-nav__close {
+  position: absolute;
+  height: 22px;
+  width: 22px;
+  top: 13px;
+  right: 20px;
+  z-index: 1;
+  background: none;
+  background-image: url("../img/icon-x.svg");
   border: 0;
   cursor: pointer;
 }
@@ -62,11 +80,15 @@
     display: none;
   }
 
+  .main-nav__close {
+    display: none;
+  }
+
   .main-nav__list {
     display: flex;
     margin: 0;
     padding: 0;
-    padding-top: 16px;
+    padding-top: 6px;
   }
 
   .main-nav__item {

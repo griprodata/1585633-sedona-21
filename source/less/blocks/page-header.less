@@ -1,16 +1,25 @@
 .page-header {
-  height: 56px;
+  padding-bottom: 56px;
   background: @white;
+  position: relative;
 }
 
 .page-header__logo {
   position: absolute;
   z-index: 1;
-  top: 0;
+  bottom: -28px;
   left: 50%;
   height: 84px;
   transform: translateX(-50%);
 }
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    padding-bottom: 0;
+    height: 56px;
+  }
+}
+
 
 @media (min-width: @desktop-width) {
   .page-header {

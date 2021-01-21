@@ -1,13 +1,13 @@
 const contactsButton = document.querySelector(".contacts__button");
 const contactsPopup = document.querySelector(".contacts__module--two");
 const contactsClose = contactsPopup.querySelector(".contacts__module-button--two");
-const contactsForm = contactsPopup.querySelector(".contacts__form");
-const contactsMessage = contactsPopup.querySelector(".contacts__message");
-const contactsName = contactsPopup.querySelector(".contacts__input--name");
-const contactsSureName = contactsPopup.querySelector(".contacts__input--surename");
-const contactsPatronymic = contactsPopup.querySelector(".contacts__input--patronymic");
-const contactsPhone = contactsPopup.querySelector(".contacts__input--phone");
-const contactsMail = contactsPopup.querySelector(".contacts__input--mail");
+const contactsForm = document.querySelector(".contacts__form");
+const contactsMessage = document.querySelector(".contacts__message");
+const contactsName = document.querySelector(".contacts__input--name");
+const contactsSureName = document.querySelector(".contacts__input--surename");
+const contactsPatronymic = document.querySelector(".contacts__input--patronymic");
+const contactsPhone = document.querySelector(".contacts__input--phone");
+const contactsMail = document.querySelector(".contacts__input--mail");
 
 let isStorageSupport = true;
 let storage = "";
@@ -25,9 +25,10 @@ contactsButton.addEventListener("click", function (evt) {
 
   if (storage) {
     contactsMessage.value = storage;
-  }
-
+    contactsSureNamefocus();
+  } else {
   contactsMessage.focus();
+  }
 });
 
 contactsClose.addEventListener("click", function (evt) {
@@ -41,6 +42,15 @@ contactsForm.addEventListener("submit", function (evt) {
   } else {
     if (isStorageSupport) {
       localStorage.setItem("login", contactsMessage.value);
+    }
+  }
+});
+
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
+    if (contactsPopup.classList.contains("contacts-show")) {
+      evt.preventDefault();
+      contactsPopup.classList.remove("contacts-show");
     }
   }
 });

@@ -10,6 +10,10 @@
   margin-bottom: 19px;
 }
 
+.contacts__title--name {
+  margin-bottom: 19px;
+}
+
 .contacts__article {
   color: @space;
   display: none;
@@ -20,7 +24,7 @@
   height: 58px;
   border: none;
   width: 100%;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 26px;
   font-weight: 700;
   padding: 20px;
@@ -39,23 +43,22 @@
 .contacts__group {
   border: none;
   margin: 0;
+  padding: 0 20px;
   border-bottom: 2px solid @extraspace;
 }
 
 .contacts__group--name {
   padding: 0 20px;
   margin-bottom: 24px;
+  padding-bottom: 4px;
 }
+
 
 .contacts__item--name {
   display: flex;
 
   justify-content: space-between;
   margin-bottom: 20px;
-}
-
-.contacts__list--mail {
-  padding: 0;
 }
 
 .contacts__list {
@@ -97,7 +100,7 @@
   width: 58px;
   height: 58px;
   background-image: url("../img/group-phone.svg");
-  transform: translateY(-50%);
+  transform: translateY(-50%, -50%);
   background-repeat: no-repeat;
 }
 
@@ -109,15 +112,18 @@
   width: 58px;
   height: 58px;
   background-image: url("../img/group-mail.svg");
-  transform: translateY(-50%);
+  transform: translateY(-50%, -50%);
   background-repeat: no-repeat;
+}
+
+.contacts__label--name {
+  margin-right: 17px;
 }
 
 .contacts__label {
   position: relative;
   flex-shrink: 0;
   padding-top: 18px;
-  margin-right: 17px;
 }
 
 .contacts__label-radio {
@@ -137,7 +143,7 @@
 
 .contacts__label-radio,
 .contacts__label-checkbox {
-  padding-left: 60px;
+  padding-left: 78px;
 }
 
 .contacts__label-radio::before {
@@ -203,7 +209,7 @@
   font-size: 21px;
   line-height: 26px;
   height: 58px;
-  padding: 32 px 0 32px 0;
+  padding: 32px 0 32px 0;
   color: @white;
   background-color: @blue;
   border: none;
