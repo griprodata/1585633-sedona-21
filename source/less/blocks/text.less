@@ -1,41 +1,43 @@
-.intro {
+.text {
   background-color: @white;
+  margin-bottom: 38px;
 }
 
-.intro__title {
+.text__title {
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
   padding: 0 30px;
 }
 
-.intro__article {
+.text__article {
   color: @space;
   text-align: center;
   margin: 0;
   padding: 0 20px;
-  margin-bottom: 12px;
+  line-height: 24px;
+  margin-bottom: 28px;
 }
 
-.intro__image {
+.text__image {
   position: relative;
-  height: 389px;
+  height: 158px;
   background-color: @extrablue;
-  background-image: url("../img/index-background-desktop@1x.jpg");
+  background-image: url("../img/form-background-desktop@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   text-align: center;
-  margin-bottom: 33px;
+  margin-bottom: 36px;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/index-background@2x.jpg");
+    background-image: url("../img/form-background-desktop@2x.jpg");
   }
 }
 
-.itro__image-before::before {
+.text__image-before::before {
   content: "";
   position: absolute;
   left: 0;
@@ -47,57 +49,57 @@
   background-position: center;
 }
 
-.intro__photo {
+.text__sedona {
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
 @media (min-width: @tablet-width) {
-  .intro {
-    margin-bottom: 53px;
+  .text {
+    margin-bottom: 44px;
   }
 
-  .intro__title {
+  .text__title {
     padding: 0 160px;
-    font-size: 21px;
+    font-size: 30px;
   }
 
-  .intro__image {
-    height: 518px;
-    margin-bottom: 45px;
+  .text__image {
+    height: 290px;
+    margin-bottom: 62px;
   }
 
-  .intro__photo {
+  .text__sedona {
     height: 350px;
     width: 461px;
     position: absolute;
-    top: 49%;
+    top: 46%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
 }
 
 @media (min-width: @desktop-width) {
-  .intro {
-    margin-bottom: 40px;
+  .text {
+    margin-bottom: 20px;
   }
 
-  .intro__image {
+  .text__image {
     height: 518px;
     margin-bottom: 54px;
   }
 
-  .intro__title {
+  .text__title {
     padding: 0 300px;
   }
 
-  .intro__article {
+  .text__article {
     margin-bottom: 44px;
   }
 
-  .intro__photo {
+  .text__photo {
     top: 49%;
   }
 }

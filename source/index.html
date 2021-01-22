@@ -10,11 +10,17 @@
   <div class="page__container">
   <header class="page-header">
     <a class="page-header__logo">
-      <img src="img/logotype-mobile.svg" width="102" height="84" alt="Седона">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+      <img class="page-header__img" src="img/logotype-mobile.svg" width="102" height="84" alt="Седона">
+      </picture>
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button" aria-label="бургер">
         <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <button class="main-nav__close" type="button" aria-label="закрыть">
+        <span class="visually-hidden">Закрыть меню</span>
       </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
@@ -36,12 +42,12 @@
   </header>
   <main class="page-main">
     <section class="intro">
-      <h1 class="visually-hidden">Седона - небольшой городок в Аризоне.</h1>
+      <h1 class="visually-hidden">Седона небольшой городок в Аризоне.</h1>
       <div class="intro__wrapper">
-        <div class="intro__image">
-          <img src="img/text-index.svg" width="282" height="214" alt="седона">
+        <div class="intro__image itro__image-before">
+          <img class="intro__photo" src="img/main-index.svg" width="282" height="214" alt="седона">
         </div>
-        <p class="intro__title">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
+        <p class="intro__title">Седона &mdash; небольшой городок в Аризоне, заслуживающий большего!</p>
         <p class="intro__article">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       </div>
     </section>
@@ -51,16 +57,22 @@
         <ol class="content__list">
           <li class="content__item content__item--blue">
             <div class="content__block">
-              <div class="content__panel  content__panel--one">
+              <div class="content__panel  content__panel--one content__panel-before">
                 <h3 class="content__intro">Настоящий городок</h3>
-                <span class="content__number">- №1 -</span>
-                <p class="content__article">Седона не аттракцион для туристов, <br> там течет своя жизнь</p>
+                <span class="content__number">&mdash; №1 &mdash;</span>
+                <p class="content__article">Седона не аттракцион для туристов, там течет своя жизнь</p>
               </div>
               <div class="content__img">
-              <img class="content__image" src="img/photo-city.jpg" width="320" height="260" alt="город">
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="img/photo-city-desktop@1x.jpg 1x, img/photo-city-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/photo-city-tablet@1x.jpg 1x, img/photo-city-tablet@2x.jpg 2x">
+                  <img class="content__image" src="img/photo-city-mobile@1x.jpg"
+                    srcset="img/photo-city-mobile@2x.jpg 2x" width="320" height="260" alt="город">
+                </picture>
               </div>
-            </div>
-
+              </div>
               <ul class="content__advantages">
                 <li class="content__advantages-item content__advantages-item--home">
                   <h3 class="content__advantages-title">Жилье</h3>
@@ -75,34 +87,40 @@
                   <p class="content__advantages-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                 </li>
               </ul>
-
           </li>
           <li class="content__item content__item--blue">
             <div class="content__block">
               <div class="content__panel content__panel--two">
                 <h3 class="content__intro">Там есть мост дьявола</h3>
-                <span class="content__number">- №2 -</span>
-                <p class="content__article">Да, по нему можно пройти! Если вы <br> осмелитесь, конечно</p>
-              </div>
-              <div class="content__img">
-              <img class="content__image" src="img/photo-bridge.jpg" width="320" height="260" alt="">
-            </div>
+                <span class="content__number">&mdash; №2 &mdash;</span>
+                <p class="content__article">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+                </div>
+                <div class="content__img">
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                      srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)"
+                      srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+                    <img class="content__image" src="img/photo-bridge-mobile@1x.jpg"
+                      srcset="img/photo-bridge-mobile@2x.jpg 2x" width="320" height="260" alt="город">
+                  </picture>
+                </div>
             </div>
           </li>
-          <li class="content__item content__item--black">
+          <li class="content__item content__item--black content__item--border">
             <h3 class="content__intro">Небольшая площадь</h3>
-            <span class="content__number">- №3 -</span>
+            <span class="content__number">&mdash; №3 &mdash;</span>
             <p class="content__article">Все интересные места находятся очень близко</p>
           </li>
-          <li class="content__item content__item--black">
+          <li class="content__item content__item--black content__item--border">
             <h3 class="content__intro">Красивая дорога</h3>
-            <span class="content__number">- №4 -</span>
-            <p class="content__article">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            <span class="content__number">&mdash; №4 &mdash;</span>
+            <p class="content__article">Ехать в Седону из Лас-Вегаса<br> совсем не скучно!</p>
           </li>
           <li class="content__item content__item--black">
             <h3 class="content__intro">Мало туристов</h3>
-            <span class="content__number">- №5 -</span>
-            <p class="content__article">Большинство едет в Гранд Каньон и толпится там</p>
+            <span class="content__number">&mdash; №5 &mdash;</span>
+            <p class="content__article">Большинство едет в Гранд Каньон<br> и толпится там</p>
           </li>
         </ol>
       </div>
@@ -111,15 +129,19 @@
       <h2 class="visually-hidden">Поиск гостиницы.</h2>
       <div class="search__wrapper">
         <p class="search__title">Заинтересовались?</p>
-        <p class="search__article">Укажите предпологаемые дни поездки,
-          и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <button class="search__button">Найти гостинницу</button>
+        <p class="search__article">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <button class="search__button">Найти гостиницу</button>
       </div>
     </section>
   </main>
   <footer class="footer">
-    <div class="footer__image">
+    <div class="footer__content">
+    <div class="footer__map">
+      <iframe class="footer__iframe" src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d2945033.928054815!2d-113.45793498980979!3d35.251653403124436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x872d8e3e34f915b1%3A0xe7378963d6fca42b!2z0JDRgNC40LfQvtC90LAsINCh0L7QtdC00LjQvdC10L3QvdGL0LUg0KjRgtCw0YLRiyDQkNC80LXRgNC40LrQuA!3m2!1d34.9268785!2d-111.55469699999999!5e0!3m2!1sru!2sru!4v1610985535155!5m2!1sru!2sru" width="1200" height="350" frameborder="0" style="border: 0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    <div class="footer__img">
       <img class="footer__image" src="img/group-map.jpg" width="320" height="350" alt="карта">
+    </div>
     </div>
     <div class="footer__wrapper">
         <p class="footer__title">#visitsedona</p>
@@ -135,9 +157,9 @@
           </li>
         </ul>
         <p class="footer__copyright">
-          <span class="footer__copyright-text">Разработанно</span>
+          <span class="footer__copyright-text">Разработано</span>
           <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
-            <img class="footer__copyright-image" src="img/htmlacademy.svg" width="27" height="34"
+            <img class="footer__copyright-image" src="img/htmlacademy.svg" width="27" height="35"
               alt="логотип html академии"></a>
         </p>
     </div>
