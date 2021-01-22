@@ -19,6 +19,9 @@
       <button class="main-nav__toggle" aria-label="бургер" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
+      <button class="main-nav__close" type="button" aria-label="закрыть">
+        <span class="visually-hidden">Закрыть меню</span>
+      </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item">
@@ -36,7 +39,9 @@
   <main class="page-main">
     <section class="text">
       <h1 class="visually-hidden">Контактная информация</h1>
-        <div class="text__image text__image-before"><img class="text__sedona" src="img/sedona-tablet.svg" width="229" height="39" alt="седона"></div>
+        <div class="text__image text__image-before">
+          <img class="text__sedona" src="img/sedona-tablet.svg" width="229" height="39" alt="седона">
+        </div>
         <h2 class="text__title">Оставьте свой отзыв</h2>
         <p class="text__article">Помогите нашим отелям стать лучше!<br>
           оставьте отзыв о них,а также о посещенных вами
@@ -50,7 +55,7 @@
             <legend class="contacts__title contacts__title--name">Представьтесь:</legend>
             <ul class="contacts__list contacts__list--name">
               <li class="contacts__item contacts__item--name">
-                <label class="contacts__label" for="your-name">Имя*:</label>
+                <label class="contacts__label contacts__label--name" for="your-name">Имя*:</label>
                 <input class="contacts__input contacts__input--name" type="text" name="name" id="your-name" placeholder="Петр">
               </li>
               <li class="contacts__item contacts__item--name">
@@ -58,7 +63,7 @@
                 <input class="contacts__input contacts__input--surename" type="text" name="surename" id="your-surname" placeholder="Иванов">
               </li>
               <li class="contacts__item contacts__item--name">
-                <label class="contacts__label" for="your-patronymic">Отчество:</label>
+                <label class="contacts__label contacts__label--name" for="your-patronymic">Отчество:</label>
                 <input class="contacts__input contacts__input--patronymic" type="text" name="patronymic" id="your-patronymic"
                   placeholder="Александрович">
               </li>

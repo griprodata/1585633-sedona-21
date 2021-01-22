@@ -20,7 +20,7 @@
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <button class="main-nav__close" type="button" aria-label="закрыть">
-        <span class="visually-hidden">Открыть меню</span>
+        <span class="visually-hidden">Закрыть меню</span>
       </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
@@ -63,10 +63,16 @@
                 <p class="content__article">Седона не аттракцион для туристов, там течет своя жизнь</p>
               </div>
               <div class="content__img">
-              <img class="content__image" src="img/photo-city.jpg" width="320" height="260" alt="город">
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="img/photo-city-desktop@1x.jpg 1x, img/photo-city-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/photo-city-tablet@1x.jpg 1x, img/photo-city-tablet@2x.jpg 2x">
+                  <img class="content__image" src="img/photo-city-mobile@1x.jpg"
+                    srcset="img/photo-city-mobile@2x.jpg 2x" width="320" height="260" alt="город">
+                </picture>
               </div>
-            </div>
-
+              </div>
               <ul class="content__advantages">
                 <li class="content__advantages-item content__advantages-item--home">
                   <h3 class="content__advantages-title">Жилье</h3>
@@ -88,10 +94,17 @@
                 <h3 class="content__intro">Там есть мост дьявола</h3>
                 <span class="content__number">&mdash; №2 &mdash;</span>
                 <p class="content__article">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-              </div>
-              <div class="content__img">
-              <img class="content__image" src="img/photo-bridge.jpg" width="320" height="260" alt="">
-            </div>
+                </div>
+                <div class="content__img">
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                      srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)"
+                      srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+                    <img class="content__image" src="img/photo-bridge-mobile@1x.jpg"
+                      srcset="img/photo-bridge-mobile@2x.jpg 2x" width="320" height="260" alt="город">
+                  </picture>
+                </div>
             </div>
           </li>
           <li class="content__item content__item--black">
