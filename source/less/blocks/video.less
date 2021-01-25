@@ -12,7 +12,7 @@
   width: 100%;
 }
 
-.video__tresh {
+.video__box {
   width: 100%;
   padding: 0 20px;
 }
@@ -41,7 +41,7 @@
   display: block;
   height: 20px;
   width: 16px;
-  background-image: url("../img/replay.svg");
+  background-image: url("../img/replay-mobile.svg");
   border: 0;
   cursor: pointer;
 }
@@ -53,7 +53,7 @@
   display: block;
   height: 20px;
   width: 32px;
-  background-image: url("../img/subtitles.svg");
+  background-image: url("../img/subtitles-mobile.svg");
   border: 0;
   cursor: pointer;
 }
@@ -65,9 +65,33 @@
   display: block;
   height: 20px;
   width: 20px;
-  background-image: url("../img/fullscreen.svg");
+  background-image: url("../img/fullscreen-mobile.svg");
   border: 0;
   cursor: pointer;
+}
+
+.video__button--replay:hover {
+  background-image: url("../img/replay-mobile-hover.svg");
+}
+
+.video__button--subtitles:hover {
+  background-image: url("../img/subtitles-mobile-hover.svg");
+}
+
+.video__button--fullscreen:hover {
+  background-image: url("../img/fullscreen-mobile-hover.svg");
+}
+
+.video__button--replay:active {
+  background-image: url("../img/replay-mobile-active.svg");
+}
+
+.video__button--subtitles:active {
+  background-image: url("../img/subtitles-mobile-active.svg");
+}
+
+.video__button--fullscreen:active {
+  background-image: url("../img/fullscreen-mobile-active.svg");
 }
 
 .video__controls {
@@ -110,7 +134,7 @@
   .video {
     padding: 0 60px;
     margin: 0;
-    margin-bottom: 39px;
+    margin-bottom: 40px;
   }
 
   .video__player {
@@ -120,16 +144,16 @@
   .video__title {
     font-size: 30px;
     margin: 0;
-    margin-bottom: 28px;
+    margin-bottom: 33px;
   }
 
   .video__text {
     margin: 0;
-    margin-bottom: 82px;
+    margin-bottom: 80px;
     padding: 0 94px;
   }
 
-  .video__tresh {
+  .video__box {
     position: absolute;
     width: 100%;
     height: 93px;
@@ -141,6 +165,8 @@
   .video__photo {
     width: 100%;
     display: block;
+    height: 100%;
+    object-fit: cover;
   }
 
   .video__controls {
@@ -172,28 +198,52 @@
     left: 35px;
     bottom: 36px;
     background: none;
-    background-image: url("../img/replay.svg");
+    background-image: url("../img/replay-white.svg");
   }
 
   .video__button--subtitles {
     bottom: 36px;
     right: 92px;
     background: none;
-    background-image: url("../img/subtitles.svg");
+    background-image: url("../img/subtitles-white.svg");
   }
 
   .video__button--fullscreen {
     right: 41px;
     bottom: 37px;
     background: none;
-    background-image: url("../img/fullscreen.svg");
+    background-image: url("../img/fullscreen-white.svg");
+  }
+
+  .video__button--replay:hover {
+    opacity: 0.6;
+  }
+
+  .video__button--subtitles:hover {
+    opacity: 0.6;
+  }
+
+  .video__button--fullscreen:hover {
+    opacity: 0.6;
+  }
+
+  .video__button--replay:active {
+    opacity: 0.3;
+  }
+
+  .video__button--subtitles:active {
+    opacity: 0.3;
+  }
+
+  .video__button--fullscreen:active {
+    opacity: 0.3;
   }
 }
 
 @media (min-width: @desktop-width) {
   .video {
     padding: 0 200px;
-    margin-bottom: 85px;
+    margin-bottom: 84px;
   }
 
   .video__title {

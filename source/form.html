@@ -72,21 +72,21 @@
           <fieldset class="contacts__group contacts__group--mail">
             <legend class="contacts__title contacts__title--mail">Контактная информация:</legend>
             <ul class="contacts__list contacts__list--mail">
-              <li class="contacts__item">
-                <label class="contacts__label contacts__label--phone" for="your-number">контактный телефон*:
+              <li class="contacts__item contacts__item--phone">
+                <label class="contacts__label contacts__label--phone" for="your-number"><span class="contacts__label-text">контактный</span> телефон*:</label>
                 <input class="contacts__input contacts__input--phone" type="tel" name="number" id="your-number"
                   placeholder="Введите телефон">
-                </label>
+
               </li>
-              <li class="contacts__item">
-                <label class="contacts__label contacts__label--mail" for="your-email">электронная почта*:
+              <li class="contacts__item contacts__item--mail">
+                <label class="contacts__label contacts__label--mail" for="your-email">электронная почта*:</label>
                 <input class="contacts__input contacts__input--mail" type="email" name="email" id="your-email" placeholder="Введите e-mail">
-                </label>
+
               </li>
             </ul>
           </fieldset>
           <fieldset class="contacts__group contacts__group--radio">
-            <legend class="contacts__title">Ваше общее впечатление:</legend>
+            <legend class="contacts__title contacts__title--radio">Ваше общее впечатление:</legend>
             <ul class="contacts__list contacts__list--radio">
               <li class="contacts__item contacts__item--radio">
                 <input class="contacts__input visually-hidden contacts__input--radio" type="radio" name="option-radio" id="positively" checked>
@@ -108,7 +108,7 @@
             </div>
           </fieldset>
           <fieldset class="contacts__group contacts__group--checkbox">
-            <legend class="contacts__title">Посещенные достопримечательности:</legend>
+            <legend class="contacts__title contacts__title--checkbox">Посещенные достопримечательности:</legend>
             <ul class="contacts__list contacts__list--checkbox">
               <li class="contacts__item contacts__item--checkbox">
                 <input class="contacts__input visually-hidden contacts__input--checkbox" type="checkbox" name="option-checkbox" id="devils-bridge" checked>
@@ -129,7 +129,7 @@
             </ul>
           </fieldset>
           <fieldset class="contacts__group contacts__group--message">
-            <legend class="contacts__title">Опишите свои эмоции:</legend>
+            <legend class="contacts__title contacts__title--message">Опишите свои эмоции:</legend>
             <label for="your-message"></label>
             <textarea class="contacts__message" name="text" id="your-message" cols="30" rows="6"
               placeholder="Опишите подробно все свои восторги"></textarea>
@@ -140,7 +140,7 @@
             <div class="contacts__module contacts__module--two">
               <p class="contacts__module-title contacts__modele-title--two">Ваш отзыв отправлен!</p>
               <p class="contacts__module-text contacts__modele-text--two">Спасибо за ваше участие, Ваш отзыв уже поступил к нам.<br> В ближайшее время мы опобликуем его на сайте.</p>
-              <button class="contacts__module-button contacts__module-button--two" type="button">закрыть окно</button>
+              <div class="contacts__module-block"><button class="contacts__module-button contacts__module-button--two" type="button">закрыть окно</button></div>
             </div>
           </fieldset>
         </form>
@@ -162,10 +162,12 @@
         </li>
       </ul>
       <p class="footer__copyright">
-        <span class="footer__copyright-text">Разработанно</span>
+        <span class="footer__copyright-text">Разработано</span>
         <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="footer__copyright-image" src="img/htmlacademy.svg" width="27" height="34"
-            alt="логотип html академии"></a>
+          <svg class="footer__copyright-image" width="27" height="35" viewBox="0 0 27 35" fill="black" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z" />
+            </svg>
+      </a>
       </p>
     </div>
   </footer>

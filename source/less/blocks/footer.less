@@ -2,6 +2,21 @@
   background-color: @white;
 }
 
+.footer__copyright-link {
+  &:hover {
+    .footer__copyright-image {
+      fill: @blue;
+    }
+  }
+
+  &:active {
+    .footer__copyright-image {
+      fill: @black;
+      opacity: 0.3;
+    }
+  }
+}
+
 .footer__wrapper {
   display: flex;
   flex-direction: column;
@@ -25,7 +40,7 @@
   display: flex;
   padding: 0;
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 23px;
 }
 
 .footer__item {
@@ -182,6 +197,6 @@
 
 @media (min-width: @desktop-width) {
   .footer__wrapper {
-    padding: 36px 60px;
+    padding: 33px 60px;
   }
 }

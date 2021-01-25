@@ -2,6 +2,10 @@
   background-color: @white;
 }
 
+.contacts__form {
+  margin-bottom: 30px;
+}
+
 .contacts__title {
   font-size: 18px;
   line-height: 26px;
@@ -14,8 +18,29 @@
   margin-bottom: 19px;
 }
 
+.contacts__list--mail {
+  padding-bottom: 29px;
+}
+
 .contacts__title--mail {
-  margin-bottom: 2px;
+  margin-bottom: 18px;
+}
+
+.contacts__label {
+  position: relative;
+  flex-shrink: 0;
+  padding-top: 18px;
+}
+
+.contacts__label--phone,
+.contacts__label--mail {
+  padding: 0 20px;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.contacts__item--phone {
+  margin-bottom: 17px;
 }
 
 .contacts__article {
@@ -48,23 +73,23 @@
   border: none;
   margin: 0;
   padding: 0 20px;
-  border-bottom: 2px solid @extraspace;
-}
-
-.contacts__group--name {
-  padding: 0 20px;
+  border-bottom: 1px solid @extraspace;
+  padding-bottom: 25px;
   margin-bottom: 20px;
-  padding-bottom: 4px;
-}
 
-.contacts__group--radio {
-  margin-bottom: 30px;
+  &:last-child {
+    border-bottom: 0;
+  }
 }
 
 .contacts__item--name {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .contacts__list {
@@ -78,16 +103,25 @@
 }
 
 .contacts__item--checkbox {
-  margin-bottom: 54px;
+  margin-bottom: 23px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .contacts__item--radio {
-  margin-bottom: 43px;
+  margin-bottom: 15px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .contacts__input--phone,
 .contacts__input--mail {
   width: 280px;
+  display: block;
 }
 
 .contacts__input::placeholder {
@@ -96,29 +130,28 @@
 
 .contacts__message::placeholder {
   color: @black;
+  padding: 10px 20px;
 }
 
-.contacts__label--phone::before {
+.contacts__item--phone::before {
   content: "";
   position: absolute;
-  top: 50%;
+  bottom: 0;
   right: 0;
   width: 58px;
   height: 58px;
   background-image: url("../img/group-phone.svg");
-  transform: translateY(-50%, -50%);
   background-repeat: no-repeat;
 }
 
-.contacts__label--mail::before {
+.contacts__item--mail::before {
   content: "";
   position: absolute;
-  top: 50%;
+  bottom: 0;
   right: 0;
   width: 58px;
   height: 58px;
   background-image: url("../img/group-mail.svg");
-  transform: translateY(-50%, -50%);
   background-repeat: no-repeat;
 }
 
@@ -126,25 +159,59 @@
   margin-right: 17px;
 }
 
-.contacts__label {
-  position: relative;
-  flex-shrink: 0;
-  padding-top: 18px;
-}
-
 .contacts__label-radio {
   position: relative;
   font-weight: 700;
   font-size: 18px;
+  min-height: 56px;
+  padding-top: 16px;
+  display: block;
   line-height: 26px;
   text-transform: none;
+}
+
+.contacts__input--radio + label:hover::before {
+  background-image: url("../img/radio-hover.svg");
+}
+
+.contacts__input--radio + label:focus::before {
+  background-image: url("../img/radio-active.svg");
+}
+
+
+.contacts__input--radio:checked + label:hover::before {
+  background-image: url("../img/radio-checked-hover.svg");
+}
+
+.contacts__input--radio:checked + label:focus::before {
+  background-image: url("../img/radio-checked-active.svg");
+}
+
+
+.contacts__input--checkbox + label:hover::before {
+  background-image: url("../img/checkbox-hover.svg");
+}
+
+.contacts__input--checkbox + label:focus::before {
+  background-image: url("../img/checkbox-active.svg");
+}
+
+.contacts__input--checkbox:checked + label:hover::before {
+  background-image: url("../img/checkbox-checked-hover.svg");
+}
+
+.contacts__input--checkbox:checked + label:focus::before {
+  background-image: url("../img/checkbox-checked-focus.svg");
 }
 
 .contacts__label-checkbox {
   font-weight: 700;
   font-size: 18px;
+  display: block;
   line-height: 26px;
+  min-height: 56px;
   text-transform: none;
+  padding-top: 16px;
 }
 
 .contacts__label-radio,
@@ -207,6 +274,7 @@
   font-weight: 700;
   border: none;
   background-color: @basicspace;
+  margin-bottom: 40px;
 }
 
 .contacts__button {
@@ -215,7 +283,6 @@
   font-size: 21px;
   line-height: 26px;
   height: 58px;
-  padding: 32px 0 32px 0;
   color: @white;
   background-color: @blue;
   border: none;
@@ -247,7 +314,7 @@
   display: block;
   padding-bottom: 35px;
   background-color: @white;
-  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  box-shadow: 0 7px 15px @basic_rgba-space-black;
 }
 
 .contacts__module-title {
@@ -301,11 +368,21 @@
 }
 
 .contacts__module--two {
-  display: none;
+  display: block;
+  position: relative;
   background: @white;
   width: 320px;
   height: 323px;
   padding: 0 20px;
+}
+
+.contacts__module-block {
+  position: absolute;
+  background: @basicspace;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  height: 98px;
 }
 
 .contacts__module-button--two {
@@ -321,58 +398,197 @@
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .contacts__group {
+    border-bottom: none;
   }
 
   .contacts__article {
     display: block;
   }
 
+  .contacts__title {
+    font-size: 21px;
+  }
+
+  .contacts__module-block {
+    height: 146px;
+  }
+
+  .contacts__title--mail::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 123px;
+    height: 1px;
+    background-color: @basic-ultra-space;
+  }
+
+  .contacts__title--mail::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 123px;
+    height: 1px;
+    background-color: @basic-ultra-space;
+  }
+
+
+  .contacts__button {
+    width: 324px;
+  }
+
   .contacts__group--name {
     order: 2;
+    width: 50%;
+    padding-left: 57px;
+    margin-bottom: 72px;
+    padding-right: 40px;
+    padding-bottom: 0;
+  }
+
+  .contacts__title--name {
+    margin-bottom: 54px;
+    text-align: left;
   }
 
   .contacts__group--mail {
     order: 3;
     width: 100%;
+    position: relative;
+    margin-bottom: 27px;
   }
 
   .contacts__group--radio {
     order: 1;
+    border-right: 1px solid @basic-ultra-space;
     width: 50%;
+    margin-bottom: 72px;
+    padding-left: 38px;
+    padding-bottom: 0;
   }
 
   .contacts__list--radio {
-    padding: 0;
     margin: 0;
   }
 
+  .contacts__title--radio {
+    margin-bottom: 56px;
+    text-align: left;
+  }
+
+  .contacts__title--checkbox {
+    padding: 0 160px;
+    margin-bottom: 45px;
+  }
+
+  .contacts__title--checkbox::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 123px;
+    height: 1px;
+    background-color: @basic-ultra-space;
+  }
+
+  .contacts__title--checkbox::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 123px;
+    height: 1px;
+    background-color: @basic-ultra-space;
+  }
+
+  .contacts__list--mail {
+    padding: 0 20px;
+  }
+
+  .contacts__title--mail {
+    margin-bottom: 24px;
+  }
+
+  .contacts__title--message {
+    margin-bottom: 53px;
+  }
+
+
   .contacts__group--checkbox {
     order: 4;
+    position: relative;
     width: 100%;
+    padding-bottom: 0;
+    margin-bottom: 39px;
   }
 
   .contacts__group--message {
     order: 5;
+    padding: 0 40px;
     width: 100%;
+    position: relative;
+  }
+
+  .contacts__title--message::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 123px;
+    height: 1px;
+    background-color: @basic-ultra-space;
+  }
+
+  .contacts__title--message::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 123px;
+    height: 1px;
+    background-color: @basic-ultra-space;
   }
 
   .contacts__blocks {
     display: flex;
     justify-content: space-between;
+    padding: 0;
   }
 
   .contacts__list--checkbox {
     display: flex;
     flex-wrap: wrap;
-    padding: 0;
+    justify-content: space-between;
+    max-width: 460px;
+    width: 100%;
+    margin: 0 auto;
   }
 
   .contacts__item--checkbox {
-    width: 50%;
+    width: 44%;
+    margin-bottom: 31px;
+
+    &:last-child {
+      margin-bottom: 31px;
+    }
+  }
+
+  .contacts__item--radio {
+    margin-bottom: 22px;
+  }
+
+  .contacts__item--phone {
+    margin-bottom: 26px;
   }
 
   .contacts__message {
     width: 100%;
+    margin-bottom: 53px;
   }
 
   .contacts__input--mail,
@@ -405,13 +621,13 @@
     height: 347px;
   }
 
-  .contacts__modele-title--two {
+  .contacts__module-title--two {
     margin: 0;
     margin-top: 8px;
     margin-bottom: 31px;
   }
 
-  .contacts__modele-text--two {
+  .contacts__module-text--two {
     padding: 0 10px;
     margin-bottom: 87px;
   }
@@ -424,21 +640,39 @@
     width: 458px;
     font-size: 21px;
   }
+
+  .contacts__message::placeholder {
+    padding: 20px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .contacts__list--mail {
     display: flex;
     justify-content: space-between;
+    padding: 0;
+  }
+
+  .contacts__form {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .contacts__label-text {
+    display: none;
   }
 
   .contacts__group--checkbox {
     width: 100%;
+    margin-bottom: 32px;
   }
 
   .contacts__list--checkbox {
     display: flex;
     justify-content: space-between;
+    max-width: 700px;
   }
 
   .contacts__item--checkbox {
@@ -449,7 +683,118 @@
     padding: 0 20px;
   }
 
+  .contacts__title--message::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 280px;
+    height: 1px;
+    background-color: @basic-ultra-space;
+  }
+
+  .contacts__title--message::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 280px;
+    height: 1px;
+    background-color: @basic-ultra-space;
+  }
+
+  .contacts__title--checkbox::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 280px;
+    height: 1px;
+    background-color: @basic-ultra-space;
+  }
+
+  .contacts__title--checkbox::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 280px;
+    height: 1px;
+    background-color: @basic-ultra-space;
+  }
+
+  .contacts__title--mail::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 280px;
+    height: 1px;
+    background-color: @basic-ultra-space;
+  }
+
+  .contacts__title--mail::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 280px;
+    height: 1px;
+    background-color: @basic-ultra-space;
+  }
+
+  .contacts__item--mail {
+    display: flex;
+    align-items: center;
+    width: 50%;
+  }
+
+  .contacts__item--phone {
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    width: calc(50% - 80px);
+  }
+
   .contacts__module-button--first {
     width: 272px;
+  }
+
+  .contacts__label--phone,
+  .contacts__label--mail {
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+
+  .contacts__group--name {
+    padding-left: 78px;
+    margin-bottom: 72px;
+    padding-right: 0;
+  }
+
+  .contacts__title--checkbox {
+    padding: 0 254px;
+    margin-bottom: 37px;
+  }
+
+  .contacts__title--mail {
+    margin-bottom: 69px;
+  }
+
+  .contacts__group--radio {
+    margin-bottom: 72px;
+    padding-left: 2px;
+  }
+
+  .contacts__title--radio {
+    text-align: center;
+  }
+
+  .contacts__button {
+    width: 480px;
+  }
+
+  .contacts__group--message {
+    padding: 0;
   }
 }
