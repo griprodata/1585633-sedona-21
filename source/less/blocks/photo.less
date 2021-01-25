@@ -45,8 +45,8 @@
 }
 
 .photo__item {
-  margin-bottom: 21px;
-  border-bottom: 2px solid @extraspace;
+  margin-bottom: 22px;
+  border-bottom: 1px solid @extraspace;
 }
 
 .photo__title {
@@ -81,7 +81,7 @@
   padding: 0 20px;
 }
 
-.photo__bloknot {
+.photo__container {
   display: flex;
   padding: 0 20px;
 }
@@ -198,9 +198,15 @@
     margin-bottom: 0;
   }
 
-  .photo__bloknot {
+  .photo__container {
     display: flex;
     align-items: center;
+    padding: 0;
+    min-width: 84px;
+  }
+
+  .photo__button {
+    margin-right: 9px;
   }
 }
 
@@ -216,7 +222,7 @@
     width: 23px;
     top: 0;
     left: 0;
-    margin-right: 14px;
+    margin-right: 8px;
     background: none;
     background-image: url("../img/like-icon-white.svg");
     border: 0;
