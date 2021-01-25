@@ -1,0 +1,153 @@
+.popup__module {
+  position: fixed;
+  padding-top: 26px;
+  padding-left: 100px;
+  padding-right: 100px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: block;
+  padding-bottom: 35px;
+  background-color: @white;
+  box-shadow: 0 7px 15px @basic_rgba-space-black;
+}
+
+.popup__module-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+  padding-top: 40px;
+  margin-bottom: 26px;
+  line-height: 26px;
+}
+
+.popup__module-text {
+  line-height: 24px;
+  padding: 0 30px;
+  color: @space;
+  margin-bottom: 60px;
+}
+
+.popup__module-button {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  height: 58px;
+  line-height: 26px;
+  color: @white;
+  background: @blue;
+  border: none;
+  text-transform: uppercase;
+}
+
+.popup__module--first {
+  position: fixed;
+  display: none;
+  width: 320px;
+  height: 280px;
+  padding: 0 20px;
+  background: @white;
+}
+
+.popup__module-title--first {
+  margin: 0;
+  margin-bottom: 26px;
+}
+
+.popup__module-text--first {
+  margin-bottom: 23px;
+}
+
+.popup__module-button--first {
+  width: 180px;
+}
+
+.popup__module--two {
+  display: none;
+  position: fixed;
+  background: @white;
+  width: 320px;
+  height: 323px;
+  padding: 0 20px;
+}
+
+.popup__module-block {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: @basicspace;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  height: 98px;
+}
+
+.popup__module-button--two {
+  width: 280px;
+}
+
+.popup__show {
+  display: block;
+}
+
+@media (min-width: @tablet-width) {
+  .popup__module-block {
+    height: 146px;
+  }
+
+  .popup__module--first {
+    width: 400px;
+    height: 347px;
+  }
+
+  .popup__module-title--first {
+    margin-top: 45px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    padding: 0 55px;
+  }
+
+  .popup__module-text--first {
+    margin-bottom: 37px;
+  }
+
+  .popup__module-button--first {
+    width: 272px;
+  }
+
+  .popup__module--two {
+    width: 640px;
+    height: 347px;
+  }
+
+  .popup__module-title--two {
+    margin: 0;
+    margin-top: 8px;
+    margin-bottom: 31px;
+  }
+
+  .popup__module-text--two {
+    padding: 0 10px;
+    margin-bottom: 87px;
+  }
+
+  .popup__module-title {
+    font-size: 30px;
+  }
+
+  .popup__module-button--two {
+    width: 458px;
+    font-size: 21px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .popup__module--first {
+    padding: 0 20px;
+  }
+
+  .popup__module-button--first {
+    width: 272px;
+  }
+}

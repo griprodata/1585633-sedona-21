@@ -21,7 +21,7 @@ try {
 
 contactsButton.addEventListener("click", function (evt) {
   evt.preventDefault();
-  contactsPopup.classList.add("contacts-show")
+  contactsPopup.classList.add("popup-show")
 
   if (storage) {
     contactsMessage.value = storage;
@@ -33,7 +33,7 @@ contactsButton.addEventListener("click", function (evt) {
 
 contactsClose.addEventListener("click", function (evt) {
   evt.preventDefault();
-  contactsPopup.classList.remove("contacts-show");
+  contactsPopup.classList.remove("popup-show");
 });
 
 contactsForm.addEventListener("submit", function (evt) {
@@ -48,9 +48,9 @@ contactsForm.addEventListener("submit", function (evt) {
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
-    if (contactsPopup.classList.contains("contacts-show")) {
+    if (contactsPopup.classList.contains("popup-show")) {
       evt.preventDefault();
-      contactsPopup.classList.remove("contacts-show");
+      contactsPopup.classList.remove("popup-show");
     }
   }
 });
