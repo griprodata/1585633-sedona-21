@@ -229,10 +229,9 @@
   content: "";
   position: absolute;
   left: 0;
-  top: 50%;
+  top: 0;
   height: 56px;
   width: 56px;
-  transform: translateY(-50%);
   background-image: url("../img/radio-off.svg");
   background-repeat: no-repeat;
 }
@@ -336,6 +335,11 @@
     border-bottom: none;
   }
 
+  .contacts__list--radio {
+    align-items: flex-start;
+    margin: 0;
+  }
+
   .contacts__article {
     display: block;
     margin: 0;
@@ -398,10 +402,6 @@
     margin-bottom: 72px;
     padding-left: 38px;
     padding-bottom: 0;
-  }
-
-  .contacts__list--radio {
-    margin: 0;
   }
 
   .contacts__title--radio {
@@ -519,6 +519,10 @@
   .contacts__message {
     width: 100%;
     margin-bottom: 53px;
+  }
+
+  .contacts__message::placeholder {
+    padding: 20px 20px;
   }
 
   .contacts__input--mail,
