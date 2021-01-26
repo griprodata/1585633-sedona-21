@@ -45,8 +45,8 @@
 }
 
 .photo__item {
-  margin-bottom: 21px;
-  border-bottom: 2px solid @extraspace;
+  margin-bottom: 22px;
+  border-bottom: 1px solid @extraspace;
 }
 
 .photo__title {
@@ -66,7 +66,7 @@
   margin-bottom: 54px;
 }
 
-.photo__alibaba {
+.photo__box {
   padding-bottom: 18px;
 }
 
@@ -81,7 +81,7 @@
   padding: 0 20px;
 }
 
-.photo__bloknot {
+.photo__container {
   display: flex;
   padding: 0 20px;
 }
@@ -122,11 +122,14 @@
 }
 
 @media (min-width: @tablet-width) {
+  .photo {
+    margin-bottom: 57px;
+  }
+
   .photo__list {
     display: flex;
     flex-wrap: wrap;
     padding: 0 60px;
-    margin-bottom: 59px;
   }
 
   .photo__sedona {
@@ -182,17 +185,28 @@
     width: 50%;
   }
 
-  .photo__alibaba {
+  .photo__box {
     background-color: @basicspace;
     display: flex;
     justify-content: space-between;
     padding: 0;
-    padding-top: 18px;
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
 
-  .photo__bloknot {
+  .photo__article {
+    margin-bottom: 0;
+  }
+
+  .photo__container {
     display: flex;
     align-items: center;
+    padding: 0;
+    min-width: 84px;
+  }
+
+  .photo__button {
+    margin-right: 9px;
   }
 }
 
@@ -200,6 +214,19 @@
   .photo__list {
     padding: 0;
     margin-bottom: 61px;
+  }
+
+  .photo__button {
+    display: block;
+    height: 21px;
+    width: 23px;
+    top: 0;
+    left: 0;
+    margin-right: 8px;
+    background: none;
+    background-image: url("../img/like-icon-white.svg");
+    border: 0;
+    cursor: pointer;
   }
 
   .photo__image {
@@ -225,7 +252,7 @@
     width: 33.33%;
   }
 
-  .photo__alibaba {
+  .photo__box {
     position: absolute;
     left: 0;
     bottom: 0;

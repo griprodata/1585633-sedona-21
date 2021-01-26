@@ -25,7 +25,8 @@
   background: @blue;
   text-decoration: none;
   text-align: center;
-  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid @extra-rgba-black;
+  border-top: 1px solid @extra-rgba-space;
 }
 
 .main-nav__link:hover {
@@ -34,7 +35,6 @@
 
 .main-nav__link:active {
   background: @basicblue;
-  color: rgba(@white, 0.3);
 }
 
 .main-nav__toggle {
@@ -67,6 +67,14 @@
 }
 
 .main-nav__toggle:active {
+  opacity: 0.3;
+}
+
+.main-nav__close:hover {
+  opacity: 0.6;
+}
+
+.main-nav__close:active {
   opacity: 0.3;
 }
 
@@ -103,6 +111,8 @@
     background: none;
     font-size: 14px;
     line-height: 26px;
+    border-bottom: none;
+    border-top: none;
   }
 
   .main-nav__link:hover {
