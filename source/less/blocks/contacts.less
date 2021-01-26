@@ -57,16 +57,17 @@
 .contacts__input {
   background-color: @basicspace;
   height: 58px;
-  border: 0;
+  border: 4px solid @basicspace;
   width: 100%;
   font-size: 16px;
   line-height: 26px;
   font-weight: 700;
-  padding: 20px;
+  padding: 0 20px;
 }
 
 .contacts__input:hover {
   background-color: @extraspace;
+  border-color: @extraspace;
 }
 
 .contacts__input:focus {
@@ -136,7 +137,6 @@
 
 .contacts__message::placeholder {
   color: @black;
-  padding: 10px 20px;
 }
 
 .contacts__item--phone::before {
@@ -277,9 +277,11 @@
   line-height: 26px;
   font-weight: 700;
   border: none;
+  padding: 10px 20px;
   width: 100%;
+  height: 157px;
   background-color: @basicspace;
-  margin-bottom: 40px;
+  margin-bottom: 44px;
 }
 
 .contacts__button {
@@ -518,10 +520,7 @@
 
   .contacts__message {
     width: 100%;
-    margin-bottom: 53px;
-  }
-
-  .contacts__message::placeholder {
+    margin-bottom: 57px;
     padding: 20px 20px;
   }
 
