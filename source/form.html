@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Седона</title>
+  <link rel="preload" href="fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="page__body">
@@ -76,12 +78,10 @@
                 <label class="contacts__label contacts__label--phone" for="your-number"><span class="contacts__label-text">контактный</span> телефон*:</label>
                 <input class="contacts__input contacts__input--phone" type="tel" name="number" id="your-number"
                   placeholder="Введите телефон">
-
               </li>
               <li class="contacts__item contacts__item--mail">
                 <label class="contacts__label contacts__label--mail" for="your-email">электронная почта*:</label>
                 <input class="contacts__input contacts__input--mail" type="email" name="email" id="your-email" placeholder="Введите e-mail">
-
               </li>
             </ul>
           </fieldset>

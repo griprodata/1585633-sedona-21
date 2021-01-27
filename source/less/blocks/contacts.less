@@ -423,6 +423,7 @@
 
   .contacts__list--mail {
     padding: 0 20px;
+    margin-bottom: -26px;
   }
 
   .contacts__title--mail {
@@ -503,6 +504,10 @@
     margin-bottom: 26px;
   }
 
+  .contacts__item--mail {
+    margin-bottom: 26px;
+  }
+
   .contacts__message {
     width: 100%;
     margin-bottom: 57px;
@@ -518,6 +523,7 @@
 @media (min-width: @desktop-width) {
   .contacts__list--mail {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 0;
   }
@@ -541,16 +547,18 @@
 
   .contacts__list--checkbox {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     max-width: none;
     align-items: flex-start;
     margin: 0 -20px;
     width: auto;
+    margin-bottom: -20px;
   }
 
   .contacts__item--checkbox {
     width: calc(25% - 40px);
     margin: 0 20px;
+    margin-bottom: 20px;
   }
 
   .contacts__title--message::before {
@@ -615,12 +623,12 @@
 
   .contacts__item--mail {
     display: flex;
+    margin-bottom: 26px;
     align-items: center;
     width: 50%;
   }
 
   .contacts__item--phone {
-    margin-bottom: 0;
     display: flex;
     align-items: center;
     width: calc(50% - 80px);
